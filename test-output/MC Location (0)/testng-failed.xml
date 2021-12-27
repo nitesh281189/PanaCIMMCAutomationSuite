@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MC Location (0)]">
+  <test thread-count="5" name="MC Location Test(failed)">
+    <classes>
+      <class name="com.PanaMCAutomation.MC_Carrier_Management.ID1258_TC017_Carrier_Dashboard_Register_New_No_of_required_IDs__0">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Management.ID1258_TC017_Carrier_Dashboard_Register_New_No_of_required_IDs__0 -->
+      <class name="com.PanaMCAutomation.MC_Carrier_Management.ID1267_TC026_Carrier_Dashboard_Register_New_Print_Queue_selectdeselect_grid_rows">
+        <methods>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Management.ID1267_TC026_Carrier_Dashboard_Register_New_Print_Queue_selectdeselect_grid_rows -->
+      <class name="com.PanaMCAutomation.MC_Carrier_Management.ID1259_TC018_Carrier_Dashboard_Register_New_No_of_required_IDs__1234567890">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Management.ID1259_TC018_Carrier_Dashboard_Register_New_No_of_required_IDs__1234567890 -->
+      <class name="com.PanaMCAutomation.MC_Carrier_Management.ID1281_TC039_Carrier_Dashboard_Carrier_Actions_Clear_operation">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Management.ID1281_TC039_Carrier_Dashboard_Carrier_Actions_Clear_operation -->
+      <class name="com.PanaMCAutomation.MC_Carrier_Management.ID1272_TC031_Carrier_Dashboard_Register_New_Print_Queue_Completed_status">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Management.ID1272_TC031_Carrier_Dashboard_Register_New_Print_Queue_Completed_status -->
+      <class name="com.PanaMCAutomation.MC_Carrier_Management.ID1282_TC040_Carrier_Dashboard_Carrier_Actions_Clear_ConsumableShipped">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Management.ID1282_TC040_Carrier_Dashboard_Carrier_Actions_Clear_ConsumableShipped -->
+      <class name="com.PanaMCAutomation.MC_Carrier_Management.ID0000_1256__TC015_Carrier_Dashboard_Register_New_Generate_Carrier">
+        <methods>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Management.ID0000_1256__TC015_Carrier_Dashboard_Register_New_Generate_Carrier -->
+      <class name="com.PanaMCAutomation.MC_Carrier_Management.ID1271_TC030_Carrier_Dashboard_Register_New_Print_Queue_RetryReprint_Print">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Management.ID1271_TC030_Carrier_Dashboard_Register_New_Print_Queue_RetryReprint_Print -->
+      <class name="com.PanaMCAutomation.MC_Carrier_Management.ID1276_1273__TC035_Carrier_Dashboard_Carrier_Actions_Delete_operation">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Management.ID1276_1273__TC035_Carrier_Dashboard_Carrier_Actions_Delete_operation -->
+      <class name="com.PanaMCAutomation.MC_Carrier_Management.ID1270_TC029_Carrier_Dashboard_Register_New_Print_Queue_Delete_Print">
+        <methods>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Management.ID1270_TC029_Carrier_Dashboard_Register_New_Print_Queue_Delete_Print -->
+      <class name="com.PanaMCAutomation.MC_Carrier_Management.ID1283_1281__TC041_Carrier_Dashboard_Carrier_Actions_Clear_DurablenotShipped">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Management.ID1283_1281__TC041_Carrier_Dashboard_Carrier_Actions_Clear_DurablenotShipped -->
+      <class name="com.PanaMCAutomation.MC_Carrier_Management.ID1273_TC032_Carrier_Dashboard_Carrier_Actions_Delete_button">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Management.ID1273_TC032_Carrier_Dashboard_Carrier_Actions_Delete_button -->
+      <class name="com.PanaMCAutomation.MC_Carrier_Management.ID1256_TC015_Carrier_Dashboard_Register_New_Generate_Carrier">
+        <methods>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Management.ID1256_TC015_Carrier_Dashboard_Register_New_Generate_Carrier -->
+      <class name="com.PanaMCAutomation.MC_Carrier_Management.ID1269_TC028_Carrier_Dashboard_Register_New_Print_Queue_Pause_Print">
+        <methods>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Management.ID1269_TC028_Carrier_Dashboard_Register_New_Print_Queue_Pause_Print -->
+      <class name="com.PanaMCAutomation.MC_Carrier_Management.ID1277_TC036_Carrier_Dashboard_Carrier_Actions_Delete_operation_when_content_is_NOT_NULL">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Management.ID1277_TC036_Carrier_Dashboard_Carrier_Actions_Delete_operation_when_content_is_NOT_NULL -->
+    </classes>
+  </test> <!-- MC Location Test(failed) -->
+</suite> <!-- Failed suite [MC Location (0)] -->

@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>TestNG:  Smoke Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Smoke Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 20 13:21:35 ICT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>591 seconds (591930 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_ALogin.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_ALogin<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>18</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_ALogin@51565ec2</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_LoginFail.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_LoginFail<br>Parameters: {user=System, password=System, Message=Login failed. Please enter valid credentials., Runmode=Y, value=100.0, password1=ss, user1=ss, Browser=Chrome}</td>
+<td></td>
+<td>14</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_LoginFail@482f8f11</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_logout.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_logout<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>15</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_logout@1593948d</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_NewPart.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_NewPart<br>Parameters: {location=loc1, user=System, name=NewPart3, password=System, Runmode=Y, description=NewPart3, value=100.0, Browser=Chrome}</td>
+<td></td>
+<td>28</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_NewPart@1b604f19</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_NewTemplatePart.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_NewTemplatePart<br>Parameters: {location=loc1, user=System, name=NewPart3, password=System, Runmode=Y, value=100.0, Browser=Chrome}</td>
+<td></td>
+<td>24</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_NewTemplatePart@7823a2f9</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_PartTemplate.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_PartTemplate<br>Parameters: {Username=System, Value=loc1, ExpectedResult=TestCasePass, PartName=PartTemp6, Password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>39</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_PartTemplate@4cc0edeb</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_NewPartWithTemplate.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_NewPartWithTemplate<br>Parameters: {user=System, name=NewPart4, password=System, template=Part1, Runmode=Y, description=NewPart4, value=100.0, Browser=Chrome}</td>
+<td></td>
+<td>24</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_NewPartWithTemplate@457e2f02</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_PartMaster.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_PartMaster<br>Parameters: {Year=2018, PartDesc=This Part is Very Imp, LOC=Loc1, AltPartNo=54321, Username=System, Runmode=Y, Month=8, PRL=2, Password=System, PartNo=0603, Day=8, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td></td>
+<td>40</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_PartMaster@5c7fa833</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_TSMNewType.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_TSMNewType<br>Parameters: {user=System, name=MSD314, password=System, Runmode=Y, description=MSD314, value=100.0, Browser=Chrome}</td>
+<td></td>
+<td>22</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_TSMNewType@39aeed2f</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_LocationNew.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_LocationNew<br>Parameters: {name=MC_LocationNew_Loc1, area=Factory, humidity=80.0, Runmode=Y, locationtype=Store, user=System, unloadlocation=CAB-G1A, temperature=30.0, value=100.0, description=MC_LocationNew_Loc1, password=System, Browser=Chrome}</td>
+<td></td>
+<td>27</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_LocationNew@724af044</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_LocationNew.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_LocationNew<br>Parameters: {name=MC_LocationNew_Loc2, area=Line All, humidity=80.0, Runmode=Y, locationtype=Station, user=System, unloadlocation=, temperature=, value=100.0, description=MC_LocationNew_Loc2, password=System, Browser=Chrome}</td>
+<td></td>
+<td>25</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_LocationNew@724af044</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_LocationNew.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_LocationNew<br>Parameters: {name=MC_LocationNew_Loc3, area=, humidity=, Runmode=Y, locationtype=Scrap, user=System, unloadlocation=CAB-G1A, temperature=30.0, value=100.0, description=MC_LocationNew_Loc3, password=System, Browser=Chrome}</td>
+<td></td>
+<td>25</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_LocationNew@724af044</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_HoldMaterial.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_HoldMaterial<br>Parameters: {data1=Hold, user=System, password=System, Runmode=Y, data=Hold test, Browser=Chrome}</td>
+<td></td>
+<td>24</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_HoldMaterial@4678c730</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_UnHoldMaterial.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_UnHoldMaterial<br>Parameters: {user=System, password=System, Runmode=Y, data=UnHold test, data2=Available, Browser=Chrome}</td>
+<td></td>
+<td>25</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_UnHoldMaterial@6767c1fc</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_ScrapMaterial.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_ScrapMaterial<br>Parameters: {name=NewLoc10, Scrap=Station, data1=Scrapped, Runmode=Y, user=System, value=5000.0, description=NewLoc10, password=System, Browser=Chrome}</td>
+<td></td>
+<td>29</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_ScrapMaterial@29ee9faa</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_UnScrapMaterial.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_UnScrapMaterial<br>Parameters: {name=NewLoc10, Scrap=Station, data2=Available, Runmode=Y, user=System, value=100.0, description=NewLoc10, password=System, Browser=Chrome}</td>
+<td></td>
+<td>25</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_UnScrapMaterial@c038203</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_AutoZero.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_AutoZero<br>Parameters: {mQuantity=1000.0, mPartNumber=0402, user=System, password=System, mID=NewID, Runmode=Y, value=100.0, Browser=Chrome}</td>
+<td></td>
+<td>34</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_AutoZero@cc285f4</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_SpliceMaterial.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_SpliceMaterial<br>Parameters: {MaterialID=MT1000082#E, Username=System, ExpectedResult=SavedSuccessfully, Password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>24</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_SpliceMaterial@55f3ddb1</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_AdjustQty.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_AdjustQty<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>20</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_AdjustQty@8bd1b6a</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_VerifyRcCancelButon.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_VerifyRcCancelButon<br>Parameters: {Quantity=100.0, MFG=1, Runmode=Y, PartNo.=Part1, DOC=1, user=System, LOT=2, MPN=2, PO=1, value=100.0, password=System, Browser=Chrome}</td>
+<td></td>
+<td>23</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_VerifyRcCancelButon@18be83e4</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_ReceiveMaterialPrint.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_ReceiveMaterialPrint<br>Parameters: {name=NewPart11, mQuantity=10, mPartNumber=NewPart11, Runmode=Y, mID=MIDTest, user=System, value=2000, description=NewPart11, password=System, Browser=Chrome}</td>
+<td></td>
+<td>31</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_ReceiveMaterialPrint@cb5822</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_Split.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_Split<br>Parameters: {Username=System, ExpectedResult=true, Password=System, Runmode=Y, NoOfSplits=4.0, Browser=Chrome}</td>
+<td></td>
+<td>23</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_Split@4b9e13df</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_BVT.MC_VerifyReceiveMaterial.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_BVT.MC_VerifyReceiveMaterial<br>Parameters: {Quantity=100.0, MFG=1, Runmode=Y, PartNo.=Part1, DOC=1, user=System, LOT=2, MPN=2, PO=1, value=100.0, password=System, Browser=Chrome}</td>
+<td></td>
+<td>19</td>
+<td>com.PanaMCAutomation.MC_BVT.MC_VerifyReceiveMaterial@2b98378d</td></tr>
+</table><p>
+</body>
+</html>

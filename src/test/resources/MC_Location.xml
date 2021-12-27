@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MC Location" parallel="none">
+  <test name="MC Location Test">   		
+		 <classes >
+		 	<class name="com.PanaMCAutomation.MC_Location.Precondition1" />
+		 	<class name="com.PanaMCAutomation.MC_Location.Precondition2" />
+		 	<class name="com.PanaMCAutomation.MC_Location.Precondition3" />
+            <class name="com.PanaMCAutomation.MC_Location.MCID1_LocationType_New" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID2_LocationType_Delete" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID3_LocationType_MissingName" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID4_LocationType_MissingDes" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID5_LocationType_Edit" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID6_Location_New1" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID6_Location_New2" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID6_Location_New3" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID6_Location_New4" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID6_Location_New5" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID6_Location_New6" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID7_Location_Cancel" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID8_Location_MissingName" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID9_Location_MissingLocType" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID10_Location_MissingDes" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID11_Location_Delete" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID12_Location_WhereUsed" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID13_Location_Edit" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID14_Location_Filter" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID15_SubLocation_New" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID16_SubLocation_MissingValue" />           	
+           	<class name="com.PanaMCAutomation.MC_Location.MCID17_SubLocation_EditConfig" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID18_SubLocation_EditValue" />
+           	<class name="com.PanaMCAutomation.MC_Location.MCID19_SubLocation_Clear" />          
+           </classes>
+  </test>
+</suite> <!-- Suite -->

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MC Cart Function" parallel="none">
+  <test name="MC Cart Function">  		
+		 <classes >
+		 	<class name="com.PanaMCAutomation.MC_Cart_Function.Precondition1" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.Precondition2" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.Precondition3" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.Precondition4" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.Precondition5" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1478_InventoryDashboardHold" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1479_20180619020135InventoryDashboardHold" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1480_20180619020135InventoryDashboardHold" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1481_20180619020135InventoryDashboardHold" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1482_InventoryDashboardUnhold" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1483_20180619020135InventoryDashboardUnhold" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1484_20180619020135InventoryDashboardUnhold" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1485_20180619020135InventoryDashboardUnhold" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1486_InventoryDashboardScrap" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1487_20180619020135InventoryDashboardScrap" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1488_20180619020135InventoryDashboardScrap" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1489_20180619020135InventoryDashboardScrap" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1490_InventoryDashboardUnscrap" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1491_20180619020135InventoryDashboardUnscrap" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1492_20180619020135InventoryDashboardUnscrap" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1493_20180619020135InventoryDashboardUnscrap" />			
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1494_InventoryDashboardMove" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1501_20180619020135InventoryDashboardMove" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1502_20180619020135InventoryDashboardMove" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1503_20180619020135InventoryDashboardMove" />			
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1495_20180619020135InventoryDashboardMove" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1496_20180619020135InventoryDashboardMove" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1497_20180619020135InventoryDashboardMove" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1498_20180619020135InventoryDashboardMove" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID1499_20180619020135InventoryDashboardMove" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID_InventoryDashboardUnSealWithoutLocation" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID_InventoryDashboardUnSeal" />		
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID_InventoryDashboardSealWithoutLocation" />
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID_InventoryDashboardSeal" />		
+			<class name="com.PanaMCAutomation.MC_Cart_Function.ID_InventoryDashboardAutoZero" />   	          
+           </classes>
+  </test>
+</suite> <!-- Suite -->

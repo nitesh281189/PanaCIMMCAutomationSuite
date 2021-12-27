@@ -1,0 +1,2179 @@
+<html>
+<head>
+<title>TestNG:  BoxingUnboxing Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BoxingUnboxing Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/42/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Dec 04 20:57:26 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>34 seconds (34238 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeComponents001.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeComponents001<br>Parameters: {Username=System, ExpectedResult=SavedSuccessfully, Password=System, Runmode=Y, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeComponents001.testB(PMBoxingRunTimeComponents001.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace225753796", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace225753796'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeComponents001.testB(PMBoxingRunTimeComponents001.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeComponents001@4f6ee6e4</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeComponents001.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeComponents001<br>Parameters: {Username=System, ExpectedResult=SavedSuccessfully, Password=System, Runmode=Y, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeComponents001.testB(PMBoxingRunTimeComponents001.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace447486093", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace447486093'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeComponents001.testB(PMBoxingRunTimeComponents001.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeComponents001@4f6ee6e4</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeStandSizePanes002.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeStandSizePanes002<br>Parameters: {Username=System, ExpectedResult=SavedSuccessfully, Password=System, Runmode=Y, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeStandSizePanes002.testB(PMBoxingRunTimeStandSizePanes002.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace77738832", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace77738832'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeStandSizePanes002.testB(PMBoxingRunTimeStandSizePanes002.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeStandSizePanes002@4466af20</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeSelectingDropDown003.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeSelectingDropDown003<br>Parameters: {Username=System, ExpectedResult=SavedSuccessfully, Password=System, Runmode=Y, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeSelectingDropDown003.testB(PMBoxingRunTimeSelectingDropDown003.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1069571746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1069571746'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeSelectingDropDown003.testB(PMBoxingRunTimeSelectingDropDown003.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeSelectingDropDown003@a514af7</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown004.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown004<br>Parameters: {Username=System, ExpectedResult=SavedSuccessfully, Password=System, Runmode=Y, PartNo=CCMT1000122#E##, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown004.testB(PMBoxingRunTimeScanWithoutSelectingDropDown004.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace542895457", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace542895457'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown004.testB(PMBoxingRunTimeScanWithoutSelectingDropDown004.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown004@6b927fb</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown004.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown004<br>Parameters: {Username=System, ExpectedResult=SavedSuccessfully, Password=System, Runmode=Y, PartNo=CCMT1000122#E##, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown004.testB(PMBoxingRunTimeScanWithoutSelectingDropDown004.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace499609505", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace499609505'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown004.testB(PMBoxingRunTimeScanWithoutSelectingDropDown004.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown004@6b927fb</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeSearchBox005.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeSearchBox005<br>Parameters: {Username=System, ExpectedResult=SavedSuccessfully, Password=System, Runmode=Y, PartNo=06032019.04.29.17.41.55, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeSearchBox005.testB(PMBoxingRunTimeSearchBox005.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1198426006", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1198426006'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeSearchBox005.testB(PMBoxingRunTimeSearchBox005.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeSearchBox005@3e58a80e</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeSearchBoxCarrierType006.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeSearchBoxCarrierType006<br>Parameters: {Username=System, ExpectedResult=SavedSuccessfully, Password=System, Runmode=Y, CarrierType=SMT Feeder, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeSearchBoxCarrierType006.testB(PMBoxingRunTimeSearchBoxCarrierType006.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace21277524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace21277524'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeSearchBoxCarrierType006.testB(PMBoxingRunTimeSearchBoxCarrierType006.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeSearchBoxCarrierType006@4fb61f4a</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierTypeList007.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierTypeList007<br>Parameters: {Username=System, PalletScan=P100413, ExpectedResult=SavedSuccessfully, BoxScan=B104788, Password=System, Runmode=Y, CarrierType=SMT Feeder, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierTypeList007.testB(PMBoxingRunTimeCarrierTypeList007.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace747004588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace747004588'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierTypeList007.testB(PMBoxingRunTimeCarrierTypeList007.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierTypeList007@4fb0f2b9</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown008.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown008<br>Parameters: {Username=System, ExpectedResult=SavedSuccessfully, Password=System, Runmode=Y, PartNo=CCMT1000122#E##, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown008.testB(PMBoxingRunTimeScanWithoutSelectingDropDown008.java:25)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2144912729", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2144912729'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown008.testB(PMBoxingRunTimeScanWithoutSelectingDropDown008.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown008@79924b</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown008.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown008<br>Parameters: {Username=System, ExpectedResult=SavedSuccessfully, Password=System, Runmode=Y, PartNo=CCMT1000122#E##, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown008.testB(PMBoxingRunTimeScanWithoutSelectingDropDown008.java:25)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace883735648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace883735648'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown008.testB(PMBoxingRunTimeScanWithoutSelectingDropDown008.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown008@79924b</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeWrongContentScanning.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeWrongContentScanning<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome, WrongContent=SNMT1000008#E}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeWrongContentScanning.testB(PMBoxingRunTimeWrongContentScanning.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1943266645", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1943266645'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeWrongContentScanning.testB(PMBoxingRunTimeWrongContentScanning.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeWrongContentScanning@7b9a4292</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierSelection.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierSelection<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierSelection.testB(PMBoxingRunTimeCarrierSelection.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1428664849", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1428664849'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierSelection.testB(PMBoxingRunTimeCarrierSelection.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierSelection@4a94ee4</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierSelected.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierSelected<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierSelected.testB(PMBoxingRunTimeCarrierSelected.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace779051277", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace779051277'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierSelected.testB(PMBoxingRunTimeCarrierSelected.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierSelected@4cc451f2</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierSelected.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierSelected<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierSelected.testB(PMBoxingRunTimeCarrierSelected.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1821580597", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1821580597'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierSelected.testB(PMBoxingRunTimeCarrierSelected.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierSelected@4cc451f2</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_Deleted.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_Deleted<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_Deleted.testB(PMBoxingRunTimeCarrier_Deleted.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2030294088", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2030294088'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_Deleted.testB(PMBoxingRunTimeCarrier_Deleted.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_Deleted@6379eb</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_EnterTextBox.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_EnterTextBox<br>Parameters: {Username=System, Search=CCMT1000012#E, Password=System, Runmode=Y, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_EnterTextBox.testB(PMBoxingRunTimeCarrier_EnterTextBox.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1390430007", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1390430007'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_EnterTextBox.testB(PMBoxingRunTimeCarrier_EnterTextBox.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_EnterTextBox@294425a7</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_EnterTextBox.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_EnterTextBox<br>Parameters: {Username=System, Search=CCMT1000012#E, Password=System, Runmode=Y, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_EnterTextBox.testB(PMBoxingRunTimeCarrier_EnterTextBox.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace262878641", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace262878641'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_EnterTextBox.testB(PMBoxingRunTimeCarrier_EnterTextBox.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_EnterTextBox@294425a7</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_PrintButton.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_PrintButton<br>Parameters: {Username=System, Search=CCMT1000012#E, Password=System, Runmode=Y, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_PrintButton.testB(PMBoxingRunTimeCarrier_PrintButton.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1424188812", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1424188812'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_PrintButton.testB(PMBoxingRunTimeCarrier_PrintButton.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_PrintButton@67d48005</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierCreation.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierCreation<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierCreation.testB(PMBoxingRunTimeCarrierCreation.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace690287064", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace690287064'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierCreation.testB(PMBoxingRunTimeCarrierCreation.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierCreation@9f116cc</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimePastInstacnce.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimePastInstacnce<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimePastInstacnce.testB(PMBoxingRunTimePastInstacnce.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1756039478", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1756039478'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimePastInstacnce.testB(PMBoxingRunTimePastInstacnce.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimePastInstacnce@12468a38</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimePastInstacnce.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimePastInstacnce<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimePastInstacnce.testB(PMBoxingRunTimePastInstacnce.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace33238366", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace33238366'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimePastInstacnce.testB(PMBoxingRunTimePastInstacnce.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimePastInstacnce@12468a38</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrrierGeneration.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrrierGeneration<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrrierGeneration.testB(PMBoxingRunTimeCarrrierGeneration.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace267533031", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace267533031'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrrierGeneration.testB(PMBoxingRunTimeCarrrierGeneration.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrrierGeneration@1aa7ecca</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrrierValidation.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrrierValidation<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrrierValidation.testB(PMBoxingRunTimeCarrrierValidation.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace438493423", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace438493423'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrrierValidation.testB(PMBoxingRunTimeCarrrierValidation.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrrierValidation@59309333</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrrierValidation.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrrierValidation<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrrierValidation.testB(PMBoxingRunTimeCarrrierValidation.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1559434619", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1559434619'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrrierValidation.testB(PMBoxingRunTimeCarrrierValidation.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrrierValidation@59309333</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRuntimePrintWithoutCarrier.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRuntimePrintWithoutCarrier<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRuntimePrintWithoutCarrier.testB(PMBoxingRuntimePrintWithoutCarrier.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace603483530", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace603483530'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRuntimePrintWithoutCarrier.testB(PMBoxingRuntimePrintWithoutCarrier.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRuntimePrintWithoutCarrier@5876a9af</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.BRTOnTheFlyInvalidCarrier.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.BRTOnTheFlyInvalidCarrier<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BRTOnTheFlyInvalidCarrier.testB(BRTOnTheFlyInvalidCarrier.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1130656047", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1130656047'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BRTOnTheFlyInvalidCarrier.testB(BRTOnTheFlyInvalidCarrier.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.BRTOnTheFlyInvalidCarrier@7ec7ffd3</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.BRTOnTheFlywithOutBConfig.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.BRTOnTheFlywithOutBConfig<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BRTOnTheFlywithOutBConfig.testB(BRTOnTheFlywithOutBConfig.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1014555985", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1014555985'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BRTOnTheFlywithOutBConfig.testB(BRTOnTheFlywithOutBConfig.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.BRTOnTheFlywithOutBConfig@5b239d7d</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.BRTOnTheFlywithOutBConfigWithCarrier.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.BRTOnTheFlywithOutBConfigWithCarrier<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BRTOnTheFlywithOutBConfigWithCarrier.testB(BRTOnTheFlywithOutBConfigWithCarrier.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace818010696", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace818010696'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BRTOnTheFlywithOutBConfigWithCarrier.testB(BRTOnTheFlywithOutBConfigWithCarrier.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.BRTOnTheFlywithOutBConfigWithCarrier@6572421</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.BTOnTheFlyCarrierRegistration.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.BTOnTheFlyCarrierRegistration<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTOnTheFlyCarrierRegistration.testB(BTOnTheFlyCarrierRegistration.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1134011961", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1134011961'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTOnTheFlyCarrierRegistration.testB(BTOnTheFlyCarrierRegistration.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.BTOnTheFlyCarrierRegistration@6b81ce95</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.BTOnTheFlyCarrierRegistrationInCarrierdashboard.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.BTOnTheFlyCarrierRegistrationInCarrierdashboard<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTOnTheFlyCarrierRegistrationInCarrierdashboard.testB(BTOnTheFlyCarrierRegistrationInCarrierdashboard.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace609438896", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace609438896'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTOnTheFlyCarrierRegistrationInCarrierdashboard.testB(BTOnTheFlyCarrierRegistrationInCarrierdashboard.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.BTOnTheFlyCarrierRegistrationInCarrierdashboard@2a798d51</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.BTCarrierDelete.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.BTCarrierDelete<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTCarrierDelete.testB(BTCarrierDelete.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1417203230", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1417203230'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTCarrierDelete.testB(BTCarrierDelete.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.BTCarrierDelete@6d763516</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrintButton.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrintButton<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrintButton.testB(BTPrintButton.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace242659479", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace242659479'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrintButton.testB(BTPrintButton.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrintButton@52bf72b5</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrintCloseButton.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrintCloseButton<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrintCloseButton.testB(BTPrintCloseButton.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1510162775", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1510162775'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrintCloseButton.testB(BTPrintCloseButton.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrintCloseButton@37afeb11</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterDropdown.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterDropdown<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterDropdown.testB(BTPrinterDropdown.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1157624710", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1157624710'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterDropdown.testB(BTPrinterDropdown.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterDropdown@515aebb0</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterRefresh.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterRefresh<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterRefresh.testB(BTPrinterRefresh.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace441451873", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace441451873'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterRefresh.testB(BTPrinterRefresh.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterRefresh@dd8ba08</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueClearCompleted.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueClearCompleted<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueClearCompleted.testB(BTPrinterQueueClearCompleted.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace309790180", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace309790180'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueClearCompleted.testB(BTPrinterQueueClearCompleted.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueClearCompleted@245b4bdc</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueuePauseAll.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueuePauseAll<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueuePauseAll.testB(BTPrinterQueuePauseAll.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2080864181", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2080864181'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueuePauseAll.testB(BTPrinterQueuePauseAll.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueuePauseAll@6c64cb25</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueResumeAll.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueResumeAll<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueResumeAll.testB(BTPrinterQueueResumeAll.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace834132073", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace834132073'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueResumeAll.testB(BTPrinterQueueResumeAll.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueResumeAll@6ae5aa72</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueDeleteAll.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueDeleteAll<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueDeleteAll.testB(BTPrinterQueueDeleteAll.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1087519874", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1087519874'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueDeleteAll.testB(BTPrinterQueueDeleteAll.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueDeleteAll@222545dc</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueRetryAll.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueRetryAll<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueRetryAll.testB(BTPrinterQueueRetryAll.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1013364696", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1013364696'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueRetryAll.testB(BTPrinterQueueRetryAll.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueRetryAll@5c5eefef</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterPageContent.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterPageContent<br>Parameters: {Username=System, PalletScan=P100413, CarrierType=SMT Feeder, Runmode=Y, CarrierID=MT1000012#E, Seconds=4.0, Part=NewPart, CarrierScan=CCMT1000012#E, Password=System, BoxScan=B104788, ExpectedResult=SavedSuccessfully, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterPageContent.testB(BTPrinterPageContent.java:23)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1993812827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1993812827'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterPageContent.testB(BTPrinterPageContent.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterPageContent@16293aa2</td></tr>
+</table><p>
+</body>
+</html>

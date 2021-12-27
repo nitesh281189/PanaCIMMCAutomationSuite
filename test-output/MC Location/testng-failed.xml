@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MC Location]">
+  <test thread-count="5" name="MC Location Test(failed)">
+    <classes>
+      <class name="com.PanaMCAutomation.MC_Location.MCID2_LocationType_Delete">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Location.MCID2_LocationType_Delete -->
+      <class name="com.PanaMCAutomation.MC_Location.MCID11_Location_Delete">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Location.MCID11_Location_Delete -->
+    </classes>
+  </test> <!-- MC Location Test(failed) -->
+</suite> <!-- Failed suite [MC Location] -->

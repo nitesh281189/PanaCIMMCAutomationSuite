@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MC Show Hidden Quantity]">
+  <test thread-count="5" name="Show Hidden Quantity Test(failed)">
+    <classes>
+      <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1113_ShowHiddenQuantity_TotalQTYValueFilter">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1113_ShowHiddenQuantity_TotalQTYValueFilter -->
+      <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1112_ShowHiddenQuantity_TotalQTYValue">
+        <methods>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1112_ShowHiddenQuantity_TotalQTYValue -->
+      <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1121_ShowHiddenQuantity_TotalGroupQTYValueHidden">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1121_ShowHiddenQuantity_TotalGroupQTYValueHidden -->
+      <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1122_ShowHiddenQuantity_TotalQTYPresent">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1122_ShowHiddenQuantity_TotalQTYPresent -->
+      <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1118_ShowHiddenQuantity_TotalGroupQTYField">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1118_ShowHiddenQuantity_TotalGroupQTYField -->
+      <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1123_ShowHiddenQuantity_TotalQTYPresentToggle">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1123_ShowHiddenQuantity_TotalQTYPresentToggle -->
+      <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1111_ShowHiddenQuantity_TotalQTYField">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1111_ShowHiddenQuantity_TotalQTYField -->
+      <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1119_ShowHiddenQuantity_TotalGroupQTYPresent">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1119_ShowHiddenQuantity_TotalGroupQTYPresent -->
+      <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1120_ShowHiddenQuantity_TotalGroupQTYValue">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1120_ShowHiddenQuantity_TotalGroupQTYValue -->
+      <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1125_ShowHiddenQuantity_TotalQTYFilterHidden">
+        <methods>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1125_ShowHiddenQuantity_TotalQTYFilterHidden -->
+      <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1114_ShowHiddenQuantity_TotalQTYValueHidden">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1114_ShowHiddenQuantity_TotalQTYValueHidden -->
+    </classes>
+  </test> <!-- Show Hidden Quantity Test(failed) -->
+</suite> <!-- Failed suite [MC Show Hidden Quantity] -->

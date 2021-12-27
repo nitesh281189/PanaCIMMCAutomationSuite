@@ -1,0 +1,865 @@
+<html>
+<head>
+<title>TestNG:  System Config Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>System Config Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>43/9/1</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 20 21:30:10 ICT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>3579 seconds (3579915 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1740_SystemConfig_ApplicationSettings_DefaultScrapLocation.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1740_SystemConfig_ApplicationSettings_DefaultScrapLocation<br>Parameters: {txtDefaultScrapLocation=Default Scrap Location, user=System, txtCCPA=Automated Optical Inspection in Quality, password=System, txtApplication=Application, Runmode=Y, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_System_Config.MCID1740_SystemConfig_ApplicationSettings_DefaultScrapLocation.testB(MCID1740_SystemConfig_ApplicationSettings_DefaultScrapLocation.java:24)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Text is NOT as expect. Expect: Automated Optical Inspection in Quality Actual: 
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.verifyTextContain(GenericKeywords.java:1857)
+	... 34 more
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace338841122", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace338841122'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor95.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_System_Config.MCID1740_SystemConfig_ApplicationSettings_DefaultScrapLocation.testB(MCID1740_SystemConfig_ApplicationSettings_DefaultScrapLocation.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Text is NOT as expect. Expect: Automated Optical Inspection in Quality Actual: 
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.verifyTextContain(GenericKeywords.java:1857)
+	... 34 more
+</pre></div></td>
+<td>34</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1740_SystemConfig_ApplicationSettings_DefaultScrapLocation@15ca7889</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1743_SystemConfig_ApplicationSettings_MinimumPasswordLength.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1743_SystemConfig_ApplicationSettings_MinimumPasswordLength<br>Parameters: {txtFirst=First, Runmode=Y, user=System, txtMinimumPasswordLength=Minimum Password Length, txtApplication=Application, value5=5, valueDefault=6, txt1234=1234, txtU=U, txtLast=Last, password=System, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_System_Config.MCID1743_SystemConfig_ApplicationSettings_MinimumPasswordLength.testB(MCID1743_SystemConfig_ApplicationSettings_MinimumPasswordLength.java:24)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	PopUp Message is not corrected !!!
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.AppKeywords.failingStatusVerify(AppKeywords.java:5286)
+	... 35 more
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace409687728", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace409687728'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_System_Config.MCID1743_SystemConfig_ApplicationSettings_MinimumPasswordLength.testB(MCID1743_SystemConfig_ApplicationSettings_MinimumPasswordLength.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	PopUp Message is not corrected !!!
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.AppKeywords.failingStatusVerify(AppKeywords.java:5286)
+	... 35 more
+</pre></div></td>
+<td>20</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1743_SystemConfig_ApplicationSettings_MinimumPasswordLength@6e509ffa</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1758_UserConfig_AssignGroup_LoginIDSearch.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1758_UserConfig_AssignGroup_LoginIDSearch<br>Parameters: {user=System, password=System, Runmode=Y, textUMCID=UMCID, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_System_Config.MCID1758_UserConfig_AssignGroup_LoginIDSearch.testB(MCID1758_UserConfig_AssignGroup_LoginIDSearch.java:24)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Element is NOT present PanaMC.MCUserConfigLoginIDListIDNo1_xpath
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.validateElementIsPresent(GenericKeywords.java:1798)
+	... 34 more
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace836366994", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace836366994'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor94.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_System_Config.MCID1758_UserConfig_AssignGroup_LoginIDSearch.testB(MCID1758_UserConfig_AssignGroup_LoginIDSearch.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Element is NOT present PanaMC.MCUserConfigLoginIDListIDNo1_xpath
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.validateElementIsPresent(GenericKeywords.java:1798)
+	... 34 more
+</pre></div></td>
+<td>54</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1758_UserConfig_AssignGroup_LoginIDSearch@6a03bcb1</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1766_UserConfig_UserGroup_Cancel.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1766_UserConfig_UserGroup_Cancel<br>Parameters: {txtTest=Test, user=System, password=System, Runmode=Y, txtEmpty=, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_System_Config.MCID1766_UserConfig_UserGroup_Cancel.testB(MCID1766_UserConfig_UserGroup_Cancel.java:24)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Text is NOT as expect. Expect:  Actual: Test
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.verifyStringValueEquals(GenericKeywords.java:1964)
+	... 34 more
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace328155145", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace328155145'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor97.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_System_Config.MCID1766_UserConfig_UserGroup_Cancel.testB(MCID1766_UserConfig_UserGroup_Cancel.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Text is NOT as expect. Expect:  Actual: Test
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.verifyStringValueEquals(GenericKeywords.java:1964)
+	... 34 more
+</pre></div></td>
+<td>15</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1766_UserConfig_UserGroup_Cancel@11fc564b</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1510_SystemConfig_ImportData_ImportPartViaExcel1.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1510_SystemConfig_ImportData_ImportPartViaExcel1<br>Parameters: {txtConsumable=Consumable, user=System, password=System, txtPart=Part, Runmode=Y, txtAxialInsertion=Axial Insertion, txtRawMaterial=Raw Material, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_System_Config.MCID1510_SystemConfig_ImportData_ImportPartViaExcel1.testB(MCID1510_SystemConfig_ImportData_ImportPartViaExcel1.java:24)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Unable to Click //*[@id=&quot;btnSave&quot;]
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.click(GenericKeywords.java:194)
+	... 34 more
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace326406693", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace326406693'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor53.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_System_Config.MCID1510_SystemConfig_ImportData_ImportPartViaExcel1.testB(MCID1510_SystemConfig_ImportData_ImportPartViaExcel1.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Unable to Click //*[@id=&quot;btnSave&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.click(GenericKeywords.java:194)
+	... 34 more
+</pre></div></td>
+<td>15</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1510_SystemConfig_ImportData_ImportPartViaExcel1@3571b748</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1513_SystemConfig_ImportData_ImportPartViaExcel4.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1513_SystemConfig_ImportData_ImportPartViaExcel4<br>Parameters: {txtConsumable=Consumable, user=System, password=System, txtPart=Part, Runmode=Y, txtInvalidFileFormat=test.xlsx, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_System_Config.MCID1513_SystemConfig_ImportData_ImportPartViaExcel4.testB(MCID1513_SystemConfig_ImportData_ImportPartViaExcel4.java:24)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Unable to Click //*[@id=&quot;btnUpload&quot;]
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.click(GenericKeywords.java:194)
+	... 34 more
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace681414135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace681414135'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor53.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_System_Config.MCID1513_SystemConfig_ImportData_ImportPartViaExcel4.testB(MCID1513_SystemConfig_ImportData_ImportPartViaExcel4.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Unable to Click //*[@id=&quot;btnUpload&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.click(GenericKeywords.java:194)
+	... 34 more
+</pre></div></td>
+<td>17</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1513_SystemConfig_ImportData_ImportPartViaExcel4@4470f8a6</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1514_SystemConfig_ImportData_ImportPartViaExcel5.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1514_SystemConfig_ImportData_ImportPartViaExcel5<br>Parameters: {txtInvalidFileType=test.txt, txtConsumable=Consumable, user=System, password=System, txtPart=Part, Runmode=Y, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_System_Config.MCID1514_SystemConfig_ImportData_ImportPartViaExcel5.testB(MCID1514_SystemConfig_ImportData_ImportPartViaExcel5.java:24)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Unable to Click //*[@id=&quot;btnUpload&quot;]
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.click(GenericKeywords.java:194)
+	... 34 more
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1260072877", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1260072877'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor53.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_System_Config.MCID1514_SystemConfig_ImportData_ImportPartViaExcel5.testB(MCID1514_SystemConfig_ImportData_ImportPartViaExcel5.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Unable to Click //*[@id=&quot;btnUpload&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.click(GenericKeywords.java:194)
+	... 34 more
+</pre></div></td>
+<td>16</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1514_SystemConfig_ImportData_ImportPartViaExcel5@7c83dc97</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1190_SystemConfig_ImportData_PartImportInvalidFile.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1190_SystemConfig_ImportData_PartImportInvalidFile<br>Parameters: {user=System, password=System, txtPart=Part, txtInvalidFile=test.xlsx, Runmode=Y, txtRawMaterial=Raw Material, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_System_Config.MCID1190_SystemConfig_ImportData_PartImportInvalidFile.testB(MCID1190_SystemConfig_ImportData_PartImportInvalidFile.java:24)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Unable to Click //*[@id=&quot;btnUpload&quot;]
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.click(GenericKeywords.java:194)
+	... 34 more
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace479781104", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace479781104'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor53.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_System_Config.MCID1190_SystemConfig_ImportData_PartImportInvalidFile.testB(MCID1190_SystemConfig_ImportData_PartImportInvalidFile.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Unable to Click //*[@id=&quot;btnUpload&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.click(GenericKeywords.java:194)
+	... 34 more
+</pre></div></td>
+<td>17</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1190_SystemConfig_ImportData_PartImportInvalidFile@55740540</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1190_SystemConfig_ImportData_PartImportInvalidFile.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1190_SystemConfig_ImportData_PartImportInvalidFile<br>Parameters: {user=System, password=System, txtPart=Part, txtInvalidFile=test.txt, Runmode=Y, txtRawMaterial=Raw Material, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_System_Config.MCID1190_SystemConfig_ImportData_PartImportInvalidFile.testB(MCID1190_SystemConfig_ImportData_PartImportInvalidFile.java:24)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Unable to Click //*[@id=&quot;btnUpload&quot;]
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.click(GenericKeywords.java:194)
+	... 34 more
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1613947430", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1613947430'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor53.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_System_Config.MCID1190_SystemConfig_ImportData_PartImportInvalidFile.testB(MCID1190_SystemConfig_ImportData_PartImportInvalidFile.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Unable to Click //*[@id=&quot;btnUpload&quot;]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.click(GenericKeywords.java:194)
+	... 34 more
+</pre></div></td>
+<td>16</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1190_SystemConfig_ImportData_PartImportInvalidFile@55740540</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1736_SystemConfig_ApplicationSettings_ApplicationFields.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1736_SystemConfig_ApplicationSettings_ApplicationFields<br>Parameters: {txtPrintQuantityMaximumLimit=Print Quantity Maximum Limit, txtStopReceiveNotificationForCompletedProducts=Stop Receive Notification For Completed Products, Runmode=Y, txtDefaultScrapLocation=Default Scrap Location, user=System, txtMinimumPasswordLength=Minimum Password Length, txtApplication=Application, txtLabelPrint=Label Print, txtInventoryReasonCodeGroupConfiguration=Inventory - Reason Code Group Configuration, txtDefaultLocationTemperature=Default Location Temperature, txtDisableMaterialConsumptionHistory=Disable Material Consumption History, txtDefaultLocationHumidity=Default Location Humidity, txtLoggedinUserTimeout=Logged in User Timeout, password=System, Browser=Chrome, txtReceiveMaterialAutoRefreshPrintQueue=RecieveMaterial - Auto Refresh Print Queue, txtDisableAdjustQuantityRecordHistory=Disable Ajust Quantity Record History}</td>
+<td></td>
+<td>20</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1736_SystemConfig_ApplicationSettings_ApplicationFields@5f8edcc5</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1737_SystemConfig_ApplicationSettings_UserInterfaceFields.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1737_SystemConfig_ApplicationSettings_UserInterfaceFields<br>Parameters: {txtWebErrorMessageType=Web: Error Message Type, user=System, password=System, Runmode=Y, txtUserInterface=User Interface, txtWebRecordsperpage=Web: Records per page, Browser=Chrome}</td>
+<td></td>
+<td>16</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1737_SystemConfig_ApplicationSettings_UserInterfaceFields@7b02881e</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1738_SystemConfig_ApplicationSettings_ErrorMessage.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1738_SystemConfig_ApplicationSettings_ErrorMessage<br>Parameters: {txtWebErrorMessageType=Web: Error Message Type, txtSlide=Slide, txtPopup=Popup, user=System, password=System, Runmode=Y, txtUserInterface=User Interface, Browser=Chrome}</td>
+<td></td>
+<td>21</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1738_SystemConfig_ApplicationSettings_ErrorMessage@1ebd319f</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1739_SystemConfig_ApplicationSettings_RecordPerPage.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1739_SystemConfig_ApplicationSettings_RecordPerPage<br>Parameters: {txt=10, user=System, password=System, Runmode=Y, txtUserInterface=User Interface, value=10.0, txtWebRecordsperpage=Web: Records per page, Browser=Chrome}</td>
+<td></td>
+<td>17</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1739_SystemConfig_ApplicationSettings_RecordPerPage@3c0be339</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1739_SystemConfig_ApplicationSettings_RecordPerPage.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1739_SystemConfig_ApplicationSettings_RecordPerPage<br>Parameters: {txt=20, user=System, password=System, Runmode=Y, txtUserInterface=User Interface, value=20.0, txtWebRecordsperpage=Web: Records per page, Browser=Chrome}</td>
+<td></td>
+<td>17</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1739_SystemConfig_ApplicationSettings_RecordPerPage@3c0be339</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1739_SystemConfig_ApplicationSettings_RecordPerPage.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1739_SystemConfig_ApplicationSettings_RecordPerPage<br>Parameters: {txt=100, user=System, password=System, Runmode=Y, txtUserInterface=User Interface, value=100.0, txtWebRecordsperpage=Web: Records per page, Browser=Chrome}</td>
+<td></td>
+<td>16</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1739_SystemConfig_ApplicationSettings_RecordPerPage@3c0be339</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1739_SystemConfig_ApplicationSettings_RecordPerPage.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1739_SystemConfig_ApplicationSettings_RecordPerPage<br>Parameters: {txt=50, user=System, password=System, Runmode=Y, txtUserInterface=User Interface, value=50.0, txtWebRecordsperpage=Web: Records per page, Browser=Chrome}</td>
+<td></td>
+<td>16</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1739_SystemConfig_ApplicationSettings_RecordPerPage@3c0be339</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1741_SystemConfig_ApplicationSettings_ReasonCodeGroup.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1741_SystemConfig_ApplicationSettings_ReasonCodeGroup<br>Parameters: {user=System, password=System, txtApplication=Application, Runmode=Y, txtInventoryReasonCodeGroupConfiguration=Inventory - Reason Code Group Configuration, Browser=Chrome}</td>
+<td></td>
+<td>55</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1741_SystemConfig_ApplicationSettings_ReasonCodeGroup@7a675056</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1742_SystemConfig_ApplicationSettings_LoggedInTimeOut.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1742_SystemConfig_ApplicationSettings_LoggedInTimeOut<br>Parameters: {valueDefault=30, user=System, password=System, txtApplication=Application, Runmode=Y, value500=500, txtLoggedinUserTimeout=Logged in User Timeout, Browser=Chrome}</td>
+<td></td>
+<td>20</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1742_SystemConfig_ApplicationSettings_LoggedInTimeOut@d21a74c</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1744_SystemConfig_ApplicationSettings_AutoRefreshPrintQueue.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1744_SystemConfig_ApplicationSettings_AutoRefreshPrintQueue<br>Parameters: {valueDefault=60000, user=System, password=System, txtApplication=Application, Runmode=Y, value50000=50000, txtReceiveMaterialAutoRefreshPrintQueue=RecieveMaterial - Auto Refresh Print Queue, Browser=Chrome}</td>
+<td></td>
+<td>21</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1744_SystemConfig_ApplicationSettings_AutoRefreshPrintQueue@2898ac89</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1745_UserConfig_ScreenComponents.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1745_UserConfig_ScreenComponents<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>13</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1745_UserConfig_ScreenComponents@683dbc2c</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1746_UserConfig_NewButton.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1746_UserConfig_NewButton<br>Parameters: {txtTest=Test, user=System, password=System, Runmode=Y, txtEmpty=, Browser=Chrome}</td>
+<td></td>
+<td>15</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1746_UserConfig_NewButton@68267da0</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1747_UserConfig_UserProfile_Checkbox.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1747_UserConfig_UserProfile_Checkbox<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>14</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1747_UserConfig_UserProfile_Checkbox@2638011</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1748_UserConfig_UserProfile_MandatoryFieldsCheck.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1748_UserConfig_UserProfile_MandatoryFieldsCheck<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>15</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1748_UserConfig_UserProfile_MandatoryFieldsCheck@6ff29830</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1750_UserConfig_UserProfile_Cancel.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1750_UserConfig_UserProfile_Cancel<br>Parameters: {txtTest=Test, user=System, password=System, txtLoginID=UMCID1749, Runmode=Y, txtEmpty=, txtTestEmail=Test@email.com, Browser=Chrome}</td>
+<td></td>
+<td>17</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1750_UserConfig_UserProfile_Cancel@313b2ea6</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1751_UserConfig_UserProfile_TabSwitching.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1751_UserConfig_UserProfile_TabSwitching<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>16</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1751_UserConfig_UserProfile_TabSwitching@2f465398</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1752_UserConfig_AssignGroup_SelectDropdown.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1752_UserConfig_AssignGroup_SelectDropdown<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>16</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1752_UserConfig_AssignGroup_SelectDropdown@548e6d58</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1753_UserConfig_AssignGroup_SelectDropdownGroupSelection.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1753_UserConfig_AssignGroup_SelectDropdownGroupSelection<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>16</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1753_UserConfig_AssignGroup_SelectDropdownGroupSelection@623a8092</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1754_UserConfig_AssignGroup_Add.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1754_UserConfig_AssignGroup_Add<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>17</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1754_UserConfig_AssignGroup_Add@a1cdc6d</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1755_UserConfig_AssignGroup_GroupNameTable.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1755_UserConfig_AssignGroup_GroupNameTable<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>19</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1755_UserConfig_AssignGroup_GroupNameTable@175b9425</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1756_UserConfig_AssignGroup_Delete.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1756_UserConfig_AssignGroup_Delete<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>101</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1756_UserConfig_AssignGroup_Delete@3098cf3b</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1757_UserConfig_AssignGroup_LoginIDTable.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1757_UserConfig_AssignGroup_LoginIDTable<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>15</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1757_UserConfig_AssignGroup_LoginIDTable@610f7aa</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1759_UserConfig_AssignGroup_LoginIDRowsFilter.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1759_UserConfig_AssignGroup_LoginIDRowsFilter<br>Parameters: {textValue50=1-50, Runmode=Y, textValue5=1-5, user=System, textValue100=1-100, textValue10=1-10, password=System, Browser=Chrome, textValue25=1-25}</td>
+<td></td>
+<td>16</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1759_UserConfig_AssignGroup_LoginIDRowsFilter@21b2e768</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1760_UserConfig_UserGroup_HelpContent.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1760_UserConfig_UserGroup_HelpContent<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>14</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1760_UserConfig_UserGroup_HelpContent@57250572</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1761_UserConfig_UserGroup_ScreenComponents.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1761_UserConfig_UserGroup_ScreenComponents<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>16</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1761_UserConfig_UserGroup_ScreenComponents@5609159b</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1762_UserConfig_UserGroup_New.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1762_UserConfig_UserGroup_New<br>Parameters: {txtTest=Test, user=System, password=System, Runmode=Y, txtEmpty=, Browser=Chrome}</td>
+<td></td>
+<td>15</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1762_UserConfig_UserGroup_New@2118cddf</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1763_UserConfig_UserGroup_SearchBox.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1763_UserConfig_UserGroup_SearchBox<br>Parameters: {user=System, password=System, textSystem=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>16</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1763_UserConfig_UserGroup_SearchBox@17a7f733</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1764_UserConfig_UserGroup_MandatoryFieldsCheck.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1764_UserConfig_UserGroup_MandatoryFieldsCheck<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>15</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1764_UserConfig_UserGroup_MandatoryFieldsCheck@68567e20</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1765_UserConfig_UserGroup_Save.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1765_UserConfig_UserGroup_Save<br>Parameters: {txtTest=Test, user=System, password=System, Runmode=Y, txtTestEmail=Test@email.com, txtGMCID=GMCID1765, Browser=Chrome}</td>
+<td></td>
+<td>18</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1765_UserConfig_UserGroup_Save@76ed1b7c</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1767_UserConfig_UserGroup_TabSwitching.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1767_UserConfig_UserGroup_TabSwitching<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>18</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1767_UserConfig_UserGroup_TabSwitching@394a2528</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1768_UserConfig_UserGroup_SelectDropdown.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1768_UserConfig_UserGroup_SelectDropdown<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>15</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1768_UserConfig_UserGroup_SelectDropdown@6236eb5f</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1769_UserConfig_UserGroup_SelectDropdownGroupSelection.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1769_UserConfig_UserGroup_SelectDropdownGroupSelection<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>16</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1769_UserConfig_UserGroup_SelectDropdownGroupSelection@7c1e2a9e</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1770_UserConfig_UserGroup_Add.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1770_UserConfig_UserGroup_Add<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>17</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1770_UserConfig_UserGroup_Add@fa36558</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1771_UserConfig_UserGroup_GroupNameTable.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1771_UserConfig_UserGroup_GroupNameTable<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>17</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1771_UserConfig_UserGroup_GroupNameTable@672872e1</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1772_UserConfig_UserGroup_Delete.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1772_UserConfig_UserGroup_Delete<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>39</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1772_UserConfig_UserGroup_Delete@32910148</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1773_UserGroup_AssignGroup_LoginIDTable.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1773_UserGroup_AssignGroup_LoginIDTable<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>17</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1773_UserGroup_AssignGroup_LoginIDTable@3f56875e</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1774_UserGroup_AssignGroup_LoginIDSearch.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1774_UserGroup_AssignGroup_LoginIDSearch<br>Parameters: {textGMCID=GMCID, user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>16</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1774_UserGroup_AssignGroup_LoginIDSearch@2b4bac49</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1775_UserGroup_AssignGroup_LoginIDRowsFilter.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1775_UserGroup_AssignGroup_LoginIDRowsFilter<br>Parameters: {textValue50=1-50, Runmode=Y, textValue5=1-5, user=System, textValue100=1-100, textValue10=1-10, password=System, Browser=Chrome, textValue25=1-25}</td>
+<td></td>
+<td>16</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1775_UserGroup_AssignGroup_LoginIDRowsFilter@fd07cbb</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1511_SystemConfig_ImportData_ImportPartViaExcel2.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1511_SystemConfig_ImportData_ImportPartViaExcel2<br>Parameters: {txtConsumable=Consumable, user=System, password=System, txtPart=Part, Runmode=Y, txtFileName=test.txt, Browser=Chrome}</td>
+<td></td>
+<td>19</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1511_SystemConfig_ImportData_ImportPartViaExcel2@3e96bacf</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1512_SystemConfig_ImportData_ImportPartViaExcel3.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1512_SystemConfig_ImportData_ImportPartViaExcel3<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>15</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1512_SystemConfig_ImportData_ImportPartViaExcel3@484970b0</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1187_SystemConfig_ImportData_PartImportCategoryAndTemplate.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1187_SystemConfig_ImportData_PartImportCategoryAndTemplate<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>15</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1187_SystemConfig_ImportData_PartImportCategoryAndTemplate@7748410a</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1188_SystemConfig_ImportData_PartImportExistingImportFromExcel.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1188_SystemConfig_ImportData_PartImportExistingImportFromExcel<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>16</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1188_SystemConfig_ImportData_PartImportExistingImportFromExcel@740773a3</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1189_SystemConfig_ImportData_PartImportCheckPartDashboard.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1189_SystemConfig_ImportData_PartImportCheckPartDashboard<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>16</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1189_SystemConfig_ImportData_PartImportCheckPartDashboard@37f1104d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_System_Config.MCID1749_UserConfig_UserProfile_Save.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_System_Config.MCID1749_UserConfig_UserProfile_Save<br>Parameters: {txtTest=Test, user=System, password=System, txtLoginID=UMCID1749, Runmode=Y, txtTestEmail=Test@email.com, Browser=Chrome}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to No
+	at com.PanaMCAutomation.MC_System_Config.MCID1749_UserConfig_UserProfile_Save.testB(MCID1749_UserConfig_UserProfile_Save.java:21)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1018078279", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1018078279'><pre>org.testng.SkipException: Runmode is set to No
+	at com.PanaMCAutomation.MC_System_Config.MCID1749_UserConfig_UserProfile_Save.testB(MCID1749_UserConfig_UserProfile_Save.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader.main(JarRsrcLoader.java:61)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_System_Config.MCID1749_UserConfig_UserProfile_Save@6a2b953e</td></tr>
+</table><p>
+</body>
+</html>

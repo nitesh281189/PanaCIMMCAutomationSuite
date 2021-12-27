@@ -1,0 +1,251 @@
+<html>
+<head>
+<title>TestNG:  Part Specific Data</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Part Specific Data</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Nov 29 13:53:36 ICT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>257 seconds (257740 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Part_Specific_Data.MCID6_Part_Specific_Data_Delete.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Part_Specific_Data.MCID6_Part_Specific_Data_Delete<br>Parameters: {user=System, name=Data1, password=System, Runmode=Y, description=Data1, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_Part_Specific_Data.MCID6_Part_Specific_Data_Delete.testB(MCID6_Part_Specific_Data_Delete.java:24)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Unexpected exception is thrown: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Yes&apos;)]&quot;}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
+System info: host: &apos;PRDCV271-W10&apos;, ip: &apos;192.168.20.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62412}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\4000286\AppData\Local\Temp\scoped_dir20732_2642}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 705cb9d48cfb88f81af50efe4a0b86e8
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Yes&apos;)]}
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.AppKeywords.deleteAccept(AppKeywords.java:5213)
+	... 30 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace747152360", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace747152360'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_Part_Specific_Data.MCID6_Part_Specific_Data_Delete.testB(MCID6_Part_Specific_Data_Delete.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Unexpected exception is thrown: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Yes&apos;)]&quot;}
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;32a636c&apos;, time: &apos;2015-03-05 22:01:35&apos;
+System info: host: &apos;PRDCV271-W10&apos;, ip: &apos;192.168.20.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62412}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\4000286\AppData\Local\Temp\scoped_dir20732_2642}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=78.0.3904.108, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 705cb9d48cfb88f81af50efe4a0b86e8
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Yes&apos;)]}
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.AppKeywords.deleteAccept(AppKeywords.java:5213)
+	... 30 more
+</pre></div></td>
+<td>58</td>
+<td>com.PanaMCAutomation.MC_Part_Specific_Data.MCID6_Part_Specific_Data_Delete@66480dd7</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Part_Specific_Data.MCID9_Part_Specific_Data_Barcode.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Part_Specific_Data.MCID9_Part_Specific_Data_Barcode<br>Parameters: {user=System, name=Data, password=System, Runmode=Y, value=2000, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_Part_Specific_Data.MCID9_Part_Specific_Data_Barcode.testB(MCID9_Part_Specific_Data_Barcode.java:24)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Text is NOT as expect. Expect: Data Actual: 
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.verifyStringValueContain(GenericKeywords.java:1994)
+	... 30 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1872515144", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1872515144'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_Part_Specific_Data.MCID9_Part_Specific_Data_Barcode.testB(MCID9_Part_Specific_Data_Barcode.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Text is NOT as expect. Expect: Data Actual: 
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.verifyStringValueContain(GenericKeywords.java:1994)
+	... 30 more
+</pre></div></td>
+<td>20</td>
+<td>com.PanaMCAutomation.MC_Part_Specific_Data.MCID9_Part_Specific_Data_Barcode@78c03f1f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Part_Specific_Data.MCID1_Part_Specific_Data_New.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Part_Specific_Data.MCID1_Part_Specific_Data_New<br>Parameters: {user=System, name=Data1, password=System, Runmode=Y, description=Data1, Browser=Chrome}</td>
+<td></td>
+<td>23</td>
+<td>com.PanaMCAutomation.MC_Part_Specific_Data.MCID1_Part_Specific_Data_New@71318ec4</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Part_Specific_Data.MCID2_Part_Specific_Data_Cancel.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Part_Specific_Data.MCID2_Part_Specific_Data_Cancel<br>Parameters: {user=System, name=Data1, password=System, Runmode=Y, description=Data1, Browser=Chrome}</td>
+<td></td>
+<td>22</td>
+<td>com.PanaMCAutomation.MC_Part_Specific_Data.MCID2_Part_Specific_Data_Cancel@21213b92</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Part_Specific_Data.MCID3_Part_Specific_Data_MissingName.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Part_Specific_Data.MCID3_Part_Specific_Data_MissingName<br>Parameters: {user=System, name=, password=System, Runmode=Y, description=Data1, Browser=Chrome}</td>
+<td></td>
+<td>21</td>
+<td>com.PanaMCAutomation.MC_Part_Specific_Data.MCID3_Part_Specific_Data_MissingName@a67c67e</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Part_Specific_Data.MCID4_Part_Specific_Data_MissingDataType.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Part_Specific_Data.MCID4_Part_Specific_Data_MissingDataType<br>Parameters: {user=System, name=Data1, password=System, Runmode=Y, description=Data1, Browser=Chrome}</td>
+<td></td>
+<td>23</td>
+<td>com.PanaMCAutomation.MC_Part_Specific_Data.MCID4_Part_Specific_Data_MissingDataType@3327bd23</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Part_Specific_Data.MCID5_Part_Specific_Data_MissingDes.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Part_Specific_Data.MCID5_Part_Specific_Data_MissingDes<br>Parameters: {user=System, name=Data1, password=System, Runmode=Y, description=, Browser=Chrome}</td>
+<td></td>
+<td>22</td>
+<td>com.PanaMCAutomation.MC_Part_Specific_Data.MCID5_Part_Specific_Data_MissingDes@4e1d422d</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Part_Specific_Data.MCID7_Part_Specific_Data_WhereUsed.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Part_Specific_Data.MCID7_Part_Specific_Data_WhereUsed<br>Parameters: {user=System, name=Data1, password=System, Runmode=Y, description=Data1, Browser=Chrome}</td>
+<td></td>
+<td>20</td>
+<td>com.PanaMCAutomation.MC_Part_Specific_Data.MCID7_Part_Specific_Data_WhereUsed@52a86356</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Part_Specific_Data.MCID8_Part_Specific_Data_Edit.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Part_Specific_Data.MCID8_Part_Specific_Data_Edit<br>Parameters: {user=System, password=System, Runmode=Y, description=Data2, Browser=Chrome}</td>
+<td></td>
+<td>22</td>
+<td>com.PanaMCAutomation.MC_Part_Specific_Data.MCID8_Part_Specific_Data_Edit@5ce81285</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Part_Specific_Data.MCID10_Part_Specific_Data_Filter.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Part_Specific_Data.MCID10_Part_Specific_Data_Filter<br>Parameters: {user=System, name=Data, password=System, Runmode=Y, Browser=Chrome}</td>
+<td></td>
+<td>20</td>
+<td>com.PanaMCAutomation.MC_Part_Specific_Data.MCID10_Part_Specific_Data_Filter@5ec0a365</td></tr>
+</table><p>
+</body>
+</html>

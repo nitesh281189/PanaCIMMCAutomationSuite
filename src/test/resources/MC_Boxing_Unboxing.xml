@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MC BoxingUnboxing Test" parallel="none">
+  <test name="BoxingUnboxing Test">   		
+		<classes >
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeComponents001" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeStandSizePanes002" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeSelectingDropDown003" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown004" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeSearchBox005" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeSearchBoxCarrierType006" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierTypeList007" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeScanWithoutSelectingDropDown008" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeWrongContentScanning" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierSelection" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierSelected" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_Deleted" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_EnterTextBox" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrier_PrintButton" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrierCreation" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimePastInstacnce" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrrierGeneration" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRunTimeCarrrierValidation" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.PMBoxingRuntimePrintWithoutCarrier" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.BRTOnTheFlyInvalidCarrier" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.BRTOnTheFlywithOutBConfig" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.BRTOnTheFlywithOutBConfigWithCarrier" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.BTOnTheFlyCarrierRegistration" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.BTOnTheFlyCarrierRegistrationInCarrierdashboard" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.BTCarrierDelete" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrintButton" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrintCloseButton" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterDropdown" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterRefresh" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueClearCompleted" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueuePauseAll" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueResumeAll" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueDeleteAll" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterQueueRetryAll" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Unboxing.BTPrinterPageContent" />
+         </classes>
+
+  </test>
+</suite> <!-- Suite -->

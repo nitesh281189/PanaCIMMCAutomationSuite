@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MC Part Specific Data" parallel="none">
+  <test name="Part Specific Data">  
+  		
+		 <classes >
+            <class name="com.PanaMCAutomation.MC_Part_Specific_Data.MCID1_Part_Specific_Data_New" />
+            <class name="com.PanaMCAutomation.MC_Part_Specific_Data.MCID2_Part_Specific_Data_Cancel" />
+            <class name="com.PanaMCAutomation.MC_Part_Specific_Data.MCID3_Part_Specific_Data_MissingName" />
+            <class name="com.PanaMCAutomation.MC_Part_Specific_Data.MCID4_Part_Specific_Data_MissingDataType" />
+            <class name="com.PanaMCAutomation.MC_Part_Specific_Data.MCID5_Part_Specific_Data_MissingDes" />
+            <class name="com.PanaMCAutomation.MC_Part_Specific_Data.MCID6_Part_Specific_Data_Delete" />
+            <class name="com.PanaMCAutomation.MC_Part_Specific_Data.MCID7_Part_Specific_Data_WhereUsed" />
+            <class name="com.PanaMCAutomation.MC_Part_Specific_Data.MCID8_Part_Specific_Data_Edit" />
+            <class name="com.PanaMCAutomation.MC_Part_Specific_Data.MCID9_Part_Specific_Data_Barcode" />
+            <class name="com.PanaMCAutomation.MC_Part_Specific_Data.MCID10_Part_Specific_Data_Filter" />                                   
+           </classes>
+  </test>
+</suite> <!-- Suite -->

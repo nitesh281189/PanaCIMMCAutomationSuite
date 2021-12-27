@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MC Automation" parallel="none">
+	<suite-files>
+		
+		<suite-file path="./src/test/resources/MC_Box_Configuration.xml" />
+		<suite-file path="./src/test/resources/MC_Boxing_Runtime2.xml"  />
+		<suite-file path="./src/test/resources/MC_Boxing_Unboxing.xml"  />
+		<suite-file path="./src/test/resources/MC_BVT.xml"  />
+		<suite-file path="./src/test/resources/MC_Carrier_Management.xml"  />
+	 	<suite-file path="./src/test/resources/MC_Carrier_Management2.xml" />
+	 	<suite-file path="./src/test/resources/MC_Carrier_Type.xml" />
+	 	<suite-file path="./src/test/resources/MC_Cart_Function.xml" />
+	 	<suite-file path="./src/test/resources/MC_Inventory_Dashboard.xml"  />
+	 	<suite-file path="./src/test/resources/MC_Location.xml" />
+	 	<suite-file path="./src/test/resources/MC_Material_Function.xml" />	
+	 	<suite-file path="./src/test/resources/MC_Material_Function2.xml" />
+ 	 	<suite-file path="./src/test/resources/MC_MCConfig.xml"  />
+ 	 	<suite-file path="./src/test/resources/MC_Part_Master.xml" />
+ 	 	<suite-file path="./src/test/resources/MC_Part_Specific_Data.xml" />
+ 	 	<suite-file path="./src/test/resources/MC_Printing_Helping.xml" />
+ 	 	<suite-file path="./src/test/resources/MC_Show_Hidden_Quantity.xml" />
+ 	 	<suite-file path="./src/test/resources/MC_System_Config.xml" />
+ 	 	<suite-file path="./src/test/resources/MC_TSM_Type.xml"  />
+ 	 	
+		
+  </suite-files>
+</suite> <!-- Suite -->

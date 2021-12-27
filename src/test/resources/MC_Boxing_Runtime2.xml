@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MC TSM Type" parallel="none">
+  <test name="TSM Type Test">  
+  		
+		 <classes >
+	
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition1" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition2" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition3" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition4" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition5" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.ID1655_TC009_BoxingRuntime_Material" />   
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.ID1657_TC011_BoxingRuntime_BoxingFunction" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.ID1658_TC012_BoxingRuntime_BoxingFunction_ScanningCarrier" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.ID1659_TC013_BoxingRuntime_BoxingFunction_Quantity" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.ID1660_TC014_BoxingRuntime_BoxingFunction_CarrierCapacity" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.ID1661_TC015_BoxingRuntime_BoxingFunction_AddingMaterial" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.ID1662_TC017_BoxingRuntime_Complete" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.ID1663_TC018_BoxingRuntime_AddingExcessCarrier" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.ID1664_TC019_BoxingRuntime_AddingExcessMaterial" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition6" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.ID1665_TC020_BoxingRuntime_IntroducingInvalidCarrier" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.ID1666_TC021_BoxingRuntime_InvalidHierarchy" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.ID1667_TC022_BoxingRuntime_CarrierContent_Carrier" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.ID1668_TC023_BoxingRuntime_CarrierContentAsCarrierMismatch" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.ID1669_TC024_BoxingRuntime_CarrierContent_Material" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.ID1671_TC026_BoxingRuntime_CarrierContent_Both" />
+            <class name="com.PanaMCAutomation.MC_Boxing_Runtime2.ID1656_TC010_BoxingRuntime_Material_Delete" />
+ 
+            
+                          
+           </classes>
+  </test>
+</suite> <!-- Suite -->
+
+
+
+
+
+
+
+
+
+

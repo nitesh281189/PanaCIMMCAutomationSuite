@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MC InventoryDashboard Test]">
+  <test thread-count="5" name="InventoryDashboard Test(failed)">
+    <classes>
+      <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateColumnsNonMC">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="testB" invocation-numbers="0 1"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateColumnsNonMC -->
+      <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.VerifyReceiveMaterial">
+        <methods>
+          <include name="testB" invocation-numbers="0 1"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Inventory_Dashboard.VerifyReceiveMaterial -->
+      <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateColumnsMC">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateColumnsMC -->
+      <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateCart_IconQTY">
+        <methods>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateCart_IconQTY -->
+      <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateMultiSelect_ColumnSelected">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateMultiSelect_ColumnSelected -->
+    </classes>
+  </test> <!-- InventoryDashboard Test(failed) -->
+</suite> <!-- Failed suite [MC InventoryDashboard Test] -->

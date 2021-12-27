@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MC Carrier Type]">
+  <test thread-count="5" name="MC Carrier Type Test(failed)">
+    <classes>
+      <class name="com.PanaMCAutomation.MC_Carrier_Type.MCID27_CarrierType_Edit">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Type.MCID27_CarrierType_Edit -->
+      <class name="com.PanaMCAutomation.MC_Carrier_Type.MCID16_CarrierType_SublocationEditConfig">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Type.MCID16_CarrierType_SublocationEditConfig -->
+      <class name="com.PanaMCAutomation.MC_Carrier_Type.MCID36_CarrierType_WhereUsed">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Type.MCID36_CarrierType_WhereUsed -->
+      <class name="com.PanaMCAutomation.MC_Carrier_Type.Precondition1">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Type.Precondition1 -->
+      <class name="com.PanaMCAutomation.MC_Carrier_Type.MCID25_CarrierType_Delete">
+        <methods>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Carrier_Type.MCID25_CarrierType_Delete -->
+    </classes>
+  </test> <!-- MC Carrier Type Test(failed) -->
+</suite> <!-- Failed suite [MC Carrier Type] -->

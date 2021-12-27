@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MC Location" parallel="none">
+  <test name="MC Location Test">   		
+		 <classes >
+
+     
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1515_Inventory__Label_configuration" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1516_20180619020135_Inventory__Label_configuration" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1058_TC001_Inventory_Part_Part_Profile_All_fields" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1059_N_TC002_Inventory_Part_Part_Profile_Part_Number" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1060_N_TC003_Inventory_Part_Part_Profile_Part_Description" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1061_TC004_Inventory_Part_Part_Profile_Part_Type" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1062_TC005_Inventory_Part_Part_Profile_Part_Type" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1063_N_TC006_Inventory_Part_Part_Profile_Part_Type" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1064_TC007_Inventory_Part_Part_Profile_Unit_of_Measure" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1065_N_TC008_Inventory_Part_Part_Profile_Unit_of_Measure" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1066_TC009_Inventory_Part_Part_Profile_Part_Options_Default_Receiving_Location" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1067_N_TC010_Inventory_Part_Part_Profile_Part_Options_Default_Receiving_Location" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1068_TC011_Inventory_Part_Part_Profile_Part_Options_Label_Configuration" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1069_TC012_Inventory_Part_Part_Profile_Part_Options_Label_Configuration" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1070_TC013_Inventory_Part_Part_Profile_Part_Specific_Data" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1071_TC014_Inventory_Part_Part_Profile_Part_Specific_Data" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1074_TC017_Inventory_Part_Part_Profile_Back_to_list" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1075_TC018_Inventory_Part_Part_Attribute" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1076_TC019_Inventory_Part_Copy" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1077_TC020_Inventory_Part_Part_Attribute" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1079_TC002_Inventory_Part_Part_Dashboard_Column_Selector" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1081_TC004_Inventory_Part_Part_Dashboard_Part" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1081b_TC004_Inventory_Part_Part_Dashboard_Part" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1126_TC001_Nonmaterial_control_field" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1127_TC002_Nonmaterial_control_Edit" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1128_TC003_Material_control_field" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1129_TC004_Material_control_Edit" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1130_TC005_Nonmaterial_control_Material_control_Toggle" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1131_CR__TC006_Nonmaterial_control_Material_control_default" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1132_TC007_Nonmaterial_control_checked" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1133_TC008_Nonmaterial_control_checked_no_data" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1134_TC009_MC_NonMC_uncheck" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1135_TC010_Add_all_to_cart_icon" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1136_TC011_Add_all_to_cart_icon_visibility" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1137_TC012_Add_all_to_cart_functionality" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1138_N_TC013_Add_all_to_cart_functionality" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1181_TC001_Bulk_Select_And_Update_Part_Select_Part_To_Cart" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1182_TC002_Bulk_Select_And_Update_Part_Edit" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1182b_TC002_Bulk_Select_And_Update_Part_Edit" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1184_TC004_Bulk_Select_And_Update_Part_Delete" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1185_N_TC005_Bulk_Select_And_Update_Part_Delete" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1186_N_TC006_Bulk_Select_And_Update_Part_Remove" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1504_Part_Dashboard_Create_New_Part" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1505_1058__20180619020135_Part_Dashboard_Create_New_Part" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1506_20180619020135_Part_Dashboard_Create_New_Part" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1161_TC001_Part_Template_menu" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1162_TC002_Part_Template_fields_availability" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1163_TC003_Part_Template_Save" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1164_N_TC004_Part_Template_Part_Number" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1165_TC005_part_Template_Same_as_Part_Number" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1166_TC006_Part_Template_Part_Type" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1167_N_TC007_Part_Template_Part_Type" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1168_TC008_Part_Template_Unit_of_Measure" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1169_N_TC009_Part_Template_Unit_of_Measure" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1170_TC010_Part_Template_Material_Control_default_configuration" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1171_TC011_Part_Template_Material_Control_check" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1171b_TC011_Part_Template_Material_Control_check" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1172_TC012_Part_Template_Material_Control_uncheck" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1173_N_TC013_Part_Template_Default_Receiving_Location" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1174_TC014_Part_Template_Part_Specific_Data" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1175_TC015_Part_Template_Part_Attributes" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1176_TC016_Part_Template_Cancel" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1178_1163__TC018_Part_Template_Save_as_Template_functionality" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1179_TC019_Part_Template_Part_Master_using_Template" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1180_TC020_Part_Template_Part_Master_without_Template" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1507_1163__Part_Dashboard_Part_Template" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1508_1179__20180619020135_Part_Dashboard_Part_Template" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1509_20180619020135_Part_Dashboard_Part_Template" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1707_TC001_Inventory_Area_All_fields" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1708_TC002_Inventory_Area" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1709_TC003_Inventory_Sub_Area" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1710_TC004_Inventory_Area_Area_type" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1711_TC005_Inventory_Area_New" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1712_TC005_Inventory_Area_Copy" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1713_TC005_Inventory_Area_Where_used" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1714_TC006_Inventory_Area_Where_used" />
+<class name="com.PanaMCAutomation.MC_Part_Master.ID1715_TC007_Inventory_Area_Where_used" />
+</classes>
+  </test>
+</suite> <!-- Suite -->

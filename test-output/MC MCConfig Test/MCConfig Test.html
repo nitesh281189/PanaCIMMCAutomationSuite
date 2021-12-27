@@ -1,0 +1,1143 @@
+<html>
+<head>
+<title>TestNG:  MCConfig Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>MCConfig Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/25/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Dec 04 20:56:45 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>256 seconds (256407 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeWhereUsed005.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeWhereUsed005</td>
+<td><div><pre>java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.xmlbeans.impl.store.Cur.createElementXobj(Cur.java:260)
+	at org.apache.xmlbeans.impl.store.Cur$CurLoadContext.startElement(Cur.java:2997)
+	at org.apache.xmlbeans.impl.store.Locale$SaxHandler.startElement(Locale.java:3211)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.reportStartTag(Piccolo.java:1082)
+	at org.apache.xmlbeans.impl.piccolo.xml.PiccoloLexer.parseAttributesNS(PiccoloLexer.java:1822)
+	at org.apache.xmlbeans.impl.piccolo.xml.PiccoloLexer.parseOpenTagNS(PiccoloLexer.java:1521)
+	at org.apache.xmlbeans.impl.piccolo.xml.PiccoloLexer.parseTagNS(PiccoloLexer.java:1362)
+	at org.apache.xmlbeans.impl.piccolo.xml.PiccoloLexer.yylex(PiccoloLexer.java:4682)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.yylex(Piccolo.java:1290)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.yyparse(Piccolo.java:1400)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.parse(Piccolo.java:714)
+	at org.apache.xmlbeans.impl.store.Locale$SaxLoader.load(Locale.java:3479)
+	at org.apache.xmlbeans.impl.store.Locale.parseToXmlObject(Locale.java:1277)
+	at org.apache.xmlbeans.impl.store.Locale.parseToXmlObject(Locale.java:1264)
+	at org.apache.xmlbeans.impl.schema.SchemaTypeLoaderBase.parse(SchemaTypeLoaderBase.java:345)
+	at org.openxmlformats.schemas.spreadsheetml.x2006.main.WorksheetDocument$Factory.parse(Unknown Source)
+	at org.apache.poi.xssf.usermodel.XSSFSheet.read(XSSFSheet.java:127)
+	at org.apache.poi.xssf.usermodel.XSSFSheet.onDocumentRead(XSSFSheet.java:119)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.onDocumentRead(XSSFWorkbook.java:222)
+	at org.apache.poi.POIXMLDocument.load(POIXMLDocument.java:200)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:179)
+	at com.PanaAutomation.Util.Xls_Reader.&lt;init&gt;(Xls_Reader.java:32)
+	at com.PanaAutomation.Base.BaseTest.intit(BaseTest.java:110)
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace955386712", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace955386712'><pre>java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.apache.xmlbeans.impl.store.Cur.createElementXobj(Cur.java:260)
+	at org.apache.xmlbeans.impl.store.Cur$CurLoadContext.startElement(Cur.java:2997)
+	at org.apache.xmlbeans.impl.store.Locale$SaxHandler.startElement(Locale.java:3211)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.reportStartTag(Piccolo.java:1082)
+	at org.apache.xmlbeans.impl.piccolo.xml.PiccoloLexer.parseAttributesNS(PiccoloLexer.java:1822)
+	at org.apache.xmlbeans.impl.piccolo.xml.PiccoloLexer.parseOpenTagNS(PiccoloLexer.java:1521)
+	at org.apache.xmlbeans.impl.piccolo.xml.PiccoloLexer.parseTagNS(PiccoloLexer.java:1362)
+	at org.apache.xmlbeans.impl.piccolo.xml.PiccoloLexer.yylex(PiccoloLexer.java:4682)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.yylex(Piccolo.java:1290)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.yyparse(Piccolo.java:1400)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.parse(Piccolo.java:714)
+	at org.apache.xmlbeans.impl.store.Locale$SaxLoader.load(Locale.java:3479)
+	at org.apache.xmlbeans.impl.store.Locale.parseToXmlObject(Locale.java:1277)
+	at org.apache.xmlbeans.impl.store.Locale.parseToXmlObject(Locale.java:1264)
+	at org.apache.xmlbeans.impl.schema.SchemaTypeLoaderBase.parse(SchemaTypeLoaderBase.java:345)
+	at org.openxmlformats.schemas.spreadsheetml.x2006.main.WorksheetDocument$Factory.parse(Unknown Source)
+	at org.apache.poi.xssf.usermodel.XSSFSheet.read(XSSFSheet.java:127)
+	at org.apache.poi.xssf.usermodel.XSSFSheet.onDocumentRead(XSSFSheet.java:119)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.onDocumentRead(XSSFWorkbook.java:222)
+	at org.apache.poi.POIXMLDocument.load(POIXMLDocument.java:200)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:179)
+	at com.PanaAutomation.Util.Xls_Reader.&lt;init&gt;(Xls_Reader.java:32)
+	at com.PanaAutomation.Base.BaseTest.intit(BaseTest.java:110)
+	at sun.reflect.GeneratedMethodAccessor48.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+</pre></div></td>
+<td>205</td>
+<td>com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeWhereUsed005@428640fa</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeDelete006.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeDelete006</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeDelete006@d9345cd</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeCancel007.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeCancel007</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeCancel007@2d710f1a</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.BarcodeCreation008.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.BarcodeCreation008</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.BarcodeCreation008@29215f06</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.BarcodeWeightValidation.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.BarcodeWeightValidation</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.BarcodeWeightValidation@59505b48</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.PMAttributeCreation.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.PMAttributeCreation</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.PMAttributeCreation@4efac082</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.PMAttributeCreationMandatoryCheck.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.PMAttributeCreationMandatoryCheck</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.PMAttributeCreationMandatoryCheck@6bd61f98</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.PMAttributeCopy.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.PMAttributeCopy</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.PMAttributeCopy@48aca48b</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.AttributeDelete.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.AttributeDelete</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.AttributeDelete@13fd2ccd</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.AttributeWhereUsed.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.AttributeWhereUsed</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.AttributeWhereUsed@b9b00e0</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.AttributeCancel.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.AttributeCancel</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.AttributeCancel@506ae4d4</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.InventoryAttribute.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.InventoryAttribute</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.InventoryAttribute@7d4f9aae</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.SeedConfigurationStandardType.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.SeedConfigurationStandardType</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.SeedConfigurationStandardType@72e5a8e</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.Seed_Configuration_Suffix.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.Seed_Configuration_Suffix</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.Seed_Configuration_Suffix@54e1c68b</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.Seed_Configuration_Sample.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.Seed_Configuration_Sample</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.Seed_Configuration_Sample@53aac487</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.SeedConfigurationCounter.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.SeedConfigurationCounter</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.SeedConfigurationCounter@52b1beb6</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.SeedConfigurationMaxCounterNo.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.SeedConfigurationMaxCounterNo</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.SeedConfigurationMaxCounterNo@273e7444</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.SeedConfigurationDescription.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.SeedConfigurationDescription</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.SeedConfigurationDescription@7db12bb6</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.SeedConfigurationCustomType.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.SeedConfigurationCustomType</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.SeedConfigurationCustomType@783a467b</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.SeedConfigurationName.intit()'><b>intit</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.SeedConfigurationName</td>
+<td></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.SeedConfigurationName@272113c4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.AAPreCondition_ChangeSystemErrorMessageTypeToSlide.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.AAPreCondition_ChangeSystemErrorMessageTypeToSlide<br>Parameters: {txtSlide=Slide, user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_MCConfig.AAPreCondition_ChangeSystemErrorMessageTypeToSlide.testB(AAPreCondition_ChangeSystemErrorMessageTypeToSlide.java:24)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace506083767", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace506083767'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_MCConfig.AAPreCondition_ChangeSystemErrorMessageTypeToSlide.testB(AAPreCondition_ChangeSystemErrorMessageTypeToSlide.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.AAPreCondition_ChangeSystemErrorMessageTypeToSlide@2dc54ad4</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeAllfields001.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeAllfields001<br>Parameters: {Name=Resize RCG, Username=System, ExpectedResult=SavedSuccessfully, Password=System, Runmode=Y, Desc=This is RCG, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeAllfields001.testB(PMReasonGroupCodeAllfields001.java:24)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace738537533", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace738537533'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeAllfields001.testB(PMReasonGroupCodeAllfields001.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeAllfields001@4659191b</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeAssign002.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeAssign002<br>Parameters: {Username=System, ReasonCodeName=OTHERTWO, ExpectedResult=SavedSuccessfully, Password=System, Runmode=Y, ReasonCodeDesc=This is RCG On The List, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeAssign002.testB(PMReasonGroupCodeAssign002.java:24)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1631296473", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1631296473'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeAssign002.testB(PMReasonGroupCodeAssign002.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeAssign002@55634720</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeAssignMandtory003.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeAssignMandtory003<br>Parameters: {Username=System, ReasonCodeName=OTHERONE, ExpectedResult=SavedSuccessfully, Password=System, Runmode=Y, ReasonCodeDesc=This is RCG On The List, ReasonCodeName1=OTHERTWO, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeAssignMandtory003.testB(PMReasonGroupCodeAssignMandtory003.java:24)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace650162143", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace650162143'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeAssignMandtory003.testB(PMReasonGroupCodeAssignMandtory003.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeAssignMandtory003@4b0d79fc</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeCopy004.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeCopy004<br>Parameters: {Username=System, ExpectedResult=SavedSuccessfully, Password=System, Runmode=Y, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeCopy004.testB(PMReasonGroupCodeCopy004.java:24)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1839167654", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1839167654'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:79)
+	at com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeCopy004.testB(PMReasonGroupCodeCopy004.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.NullPointerException
+	at com.PanaAutomation.Keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:1513)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1460)
+	at com.PanaAutomation.Keywords.GenericKeywords.openBrowser(GenericKeywords.java:158)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeCopy004@4c1909a3</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeWhereUsed005.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeWhereUsed005</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1834992330", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1834992330'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeWhereUsed005@428640fa</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeDelete006.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeDelete006</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1657956384", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1657956384'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeDelete006@d9345cd</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeCancel007.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeCancel007</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace211099962", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace211099962'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeCancel007@2d710f1a</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.BarcodeCreation008.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.BarcodeCreation008</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace298396066", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace298396066'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.BarcodeCreation008@29215f06</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.BarcodeWeightValidation.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.BarcodeWeightValidation</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2026813645", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2026813645'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.BarcodeWeightValidation@59505b48</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.PMAttributeCreation.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.PMAttributeCreation</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace963553195", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace963553195'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.PMAttributeCreation@4efac082</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.PMAttributeCreationMandatoryCheck.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.PMAttributeCreationMandatoryCheck</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2101409156", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2101409156'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.PMAttributeCreationMandatoryCheck@6bd61f98</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.PMAttributeCopy.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.PMAttributeCopy</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace266875980", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace266875980'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.PMAttributeCopy@48aca48b</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.AttributeDelete.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.AttributeDelete</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace390839950", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace390839950'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.AttributeDelete@13fd2ccd</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.AttributeWhereUsed.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.AttributeWhereUsed</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace954903673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace954903673'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.AttributeWhereUsed@b9b00e0</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.AttributeCancel.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.AttributeCancel</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace305793941", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace305793941'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.AttributeCancel@506ae4d4</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.InventoryAttribute.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.InventoryAttribute</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1834257703", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1834257703'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.InventoryAttribute@7d4f9aae</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.SeedConfigurationStandardType.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.SeedConfigurationStandardType</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1677788424", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1677788424'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.SeedConfigurationStandardType@72e5a8e</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.Seed_Configuration_Suffix.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.Seed_Configuration_Suffix</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace438760853", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace438760853'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.Seed_Configuration_Suffix@54e1c68b</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.Seed_Configuration_Sample.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.Seed_Configuration_Sample</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace710378199", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace710378199'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.Seed_Configuration_Sample@53aac487</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.SeedConfigurationCounter.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.SeedConfigurationCounter</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace691650464", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace691650464'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.SeedConfigurationCounter@52b1beb6</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.SeedConfigurationMaxCounterNo.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.SeedConfigurationMaxCounterNo</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1950335470", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1950335470'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.SeedConfigurationMaxCounterNo@273e7444</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.SeedConfigurationDescription.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.SeedConfigurationDescription</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1596306253", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1596306253'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.SeedConfigurationDescription@7db12bb6</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.SeedConfigurationCustomType.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.SeedConfigurationCustomType</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace482021403", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace482021403'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.SeedConfigurationCustomType@783a467b</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_MCConfig.SeedConfigurationName.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_MCConfig.SeedConfigurationName</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace284505510", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace284505510'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] com.PanaAutomation.Base.BaseTest.getData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_MCConfig.SeedConfigurationName@272113c4</td></tr>
+</table><p>
+</body>
+</html>

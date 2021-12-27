@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MC InventoryDashboard Test" parallel="none">
+  <test name="InventoryDashboard Test">   		  		
+		<classes >
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateColumnsNonMC" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateColumnsMC" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateColumnsMCChecknox" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateColumnsNonMCCheckbox" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateMC_Non_MCToggle" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateBothRadioButton" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateMCItems" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateNONMCItems" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateBoth_MC_NonMCItems" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateAddALLtoCart" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateCartItems" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.Validate_MC_AddALLtoCart" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.Validate_NonMC_AddALLtoCart" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.Validate_MC_NonMC_AddALLtoCart" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidatePart_Type_Column" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidatePart_Type_ColumnSelected" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateMultiSelect_ColumnSelected" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.VerifyReceiveMaterial" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.VerifyShowQty_Toggle_TotalQty" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.VerifyTotal_Qty" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.VerifyTotalGrp_Qty" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.VerifyTotalGrpFiltered_Qty" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateMultiRow_Select" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateCart_IconQTY" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateCart_Items" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateMaterialScan" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidatePartScan" />
+            <class name="com.PanaMCAutomation.MC_Inventory_Dashboard.ValidateMultiRow_Select_MoveToCart" />
+         </classes>
+
+  </test>
+</suite> <!-- Suite -->

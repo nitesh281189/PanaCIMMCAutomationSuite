@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MC Printing" parallel="none">
+  <test name="Printing Test">  
+  		
+		 <classes >		 
+            <class name="com.PanaMCAutomation.MC_Printing_Helping.MCID1_Printing_Boxing" />
+            <class name="com.PanaMCAutomation.MC_Printing_Helping.MCID2_Printing_Carrier" />
+            <class name="com.PanaMCAutomation.MC_Printing_Helping.MCID3_Printing_Carrier_Cart1" />
+            <class name="com.PanaMCAutomation.MC_Printing_Helping.MCID4_Printing_Carrier_Cart2" />
+            <class name="com.PanaMCAutomation.MC_Printing_Helping.MCID5_Printing_MCDashBoard" />
+            <class name="com.PanaMCAutomation.MC_Printing_Helping.MCID6_Printing_MCDashBoard_Cart1" />
+            <class name="com.PanaMCAutomation.MC_Printing_Helping.MCID7_Printing_MCDashBoard_Cart2" />           
+            <class name="com.PanaMCAutomation.MC_Printing_Helping.MCID8_Printing_MCDashBoard_ReceiveMaterial" />            
+            <class name="com.PanaMCAutomation.MC_Printing_Helping.MCID9_Printing_MCDashBoard_QueueDelete" />            
+            <class name="com.PanaMCAutomation.MC_Printing_Helping.MCID10_Printing_MCDashBoard_QueueRetry" />            
+            <class name="com.PanaMCAutomation.MC_Printing_Helping.MCID11_Printing_MCDashBoard_QueuePauseAll" />
+            <class name="com.PanaMCAutomation.MC_Printing_Helping.MCID12_Printing_MCDashBoard_QueueResumeAll" />
+            <class name="com.PanaMCAutomation.MC_Printing_Helping.MCID13_Printing_MCDashBoard_QueueRefresh" />
+            <class name="com.PanaMCAutomation.MC_Printing_Helping.MCID14_Printing_MCDashBoard_QueueClearCompleted" />                   
+           </classes>
+  </test>
+</suite> <!-- Suite -->

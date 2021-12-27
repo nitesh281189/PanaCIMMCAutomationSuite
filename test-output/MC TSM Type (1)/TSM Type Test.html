@@ -1,0 +1,342 @@
+<html>
+<head>
+<title>TestNG:  TSM Type Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TSM Type Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>25/1/2</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Nov 29 15:17:35 ICT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>879 seconds (879648 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.ID1666_TC021_BoxingRuntime_InvalidHierarchy.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.ID1666_TC021_BoxingRuntime_InvalidHierarchy<br>Parameters: {user=System, name=BoxFeederCart, password=System, Runmode=Y, data=Boxing hierarchy does not match, do you want to proceed?, value=2000, prefix=CC, Browser=Chrome}</td>
+<td><div><pre>java.lang.reflect.InvocationTargetException
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_Boxing_Runtime2.ID1666_TC021_BoxingRuntime_InvalidHierarchy.testB(ID1666_TC021_BoxingRuntime_InvalidHierarchy.java:24)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Element not found PanaMC.BoxingRuntimeSPIfnfoMesPopUp_xpath
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.mesInfoVerify(GenericKeywords.java:643)
+	... 30 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace516913231", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace516913231'><pre>java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.PanaAutomation.Driver.DriverScript.executeKeywords(DriverScript.java:77)
+	at com.PanaMCAutomation.MC_Boxing_Runtime2.ID1666_TC021_BoxingRuntime_InvalidHierarchy.testB(ID1666_TC021_BoxingRuntime_InvalidHierarchy.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Element not found PanaMC.BoxingRuntimeSPIfnfoMesPopUp_xpath
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.PanaAutomation.Keywords.GenericKeywords.reportFailure(GenericKeywords.java:1444)
+	at com.PanaAutomation.Keywords.GenericKeywords.mesInfoVerify(GenericKeywords.java:643)
+	... 30 more
+</pre></div></td>
+<td>22</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.ID1666_TC021_BoxingRuntime_InvalidHierarchy@27d415d9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition1.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition1<br>Parameters: {user=System, password=System, Runmode=Y, name3=Carrier Number, value=2000, name2=Material ID, name1=SMT Feeder, Browser=Chrome}</td>
+<td></td>
+<td>29</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition1@481a15ff</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition2.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition2<br>Parameters: {user=System, password=System, partname=partmc, Runmode=Y, value=2000, quantity=1000.0, Browser=Chrome}</td>
+<td></td>
+<td>31</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition2@78186a70</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition2.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition2<br>Parameters: {user=System, password=System, partname=partmc, Runmode=Y, value=2000, quantity=1000.0, Browser=Chrome}</td>
+<td></td>
+<td>31</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition2@78186a70</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition2.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition2<br>Parameters: {user=System, password=System, partname=partmc, Runmode=Y, value=2000, quantity=1000.0, Browser=Chrome}</td>
+<td></td>
+<td>31</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition2@78186a70</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition2.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition2<br>Parameters: {user=System, password=System, partname=partmc, Runmode=Y, value=2000, quantity=1000.0, Browser=Chrome}</td>
+<td></td>
+<td>31</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition2@78186a70</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition3.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition3<br>Parameters: {user=System, password=System, type=SMT Feeder, Runmode=Y, value=2000, num2=1.0, num1=4.0, Browser=Chrome}</td>
+<td></td>
+<td>25</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition3@306279ee</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition4.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition4<br>Parameters: {user=System, password=System, Runmode=Y, value=2000, Browser=Chrome}</td>
+<td></td>
+<td>45</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition4@545997b1</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition5.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition5<br>Parameters: {name=BoxMaterial, Runmode=Y, user=System, num=10.0, num2=1.0, nametype2=material, num1=2.0, nametype1=smt feeder, value=1000, password=System, Browser=Chrome}</td>
+<td></td>
+<td>36</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition5@4cf4d528</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.ID1655_TC009_BoxingRuntime_Material.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.ID1655_TC009_BoxingRuntime_Material<br>Parameters: {name=BoxMaterial, data2=PartMC, Runmode=Y, data1=MT, user=System, prefix=CC, value=2000, password=System, Browser=Chrome}</td>
+<td></td>
+<td>31</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.ID1655_TC009_BoxingRuntime_Material@77846d2c</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.ID1656_TC010_BoxingRuntime_Material_Delete.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.ID1656_TC010_BoxingRuntime_Material_Delete<br>Parameters: {name=BoxMaterial, data2=PartMC, Runmode=Y, data1=MT, user=System, data=1.0, prefix=CC, value=2000, password=System, Browser=Chrome}</td>
+<td></td>
+<td>34</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.ID1656_TC010_BoxingRuntime_Material_Delete@548ad73b</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.ID1657_TC011_BoxingRuntime_BoxingFunction.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.ID1657_TC011_BoxingRuntime_BoxingFunction<br>Parameters: {name=BoxMaterial, data2=PartMC, Runmode=Y, data1=MT, user=System, prefix=CC, value=2000, password=System, Browser=Chrome}</td>
+<td></td>
+<td>31</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.ID1657_TC011_BoxingRuntime_BoxingFunction@4c762604</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.ID1658_TC012_BoxingRuntime_BoxingFunction_ScanningCarrier.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.ID1658_TC012_BoxingRuntime_BoxingFunction_ScanningCarrier<br>Parameters: {name=BoxMaterial, data3=3, data2=PartMC, Runmode=Y, data1=MT, user=System, prefix=CC, value=2000, password=System, Browser=Chrome}</td>
+<td></td>
+<td>35</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.ID1658_TC012_BoxingRuntime_BoxingFunction_ScanningCarrier@2641e737</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.ID1659_TC013_BoxingRuntime_BoxingFunction_Quantity.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.ID1659_TC013_BoxingRuntime_BoxingFunction_Quantity<br>Parameters: {name=BoxMaterial, data2=1, Runmode=Y, data1=3, user=System, prefix=CC, value=2000, password=System, Browser=Chrome}</td>
+<td></td>
+<td>33</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.ID1659_TC013_BoxingRuntime_BoxingFunction_Quantity@727803de</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.ID1660_TC014_BoxingRuntime_BoxingFunction_CarrierCapacity.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.ID1660_TC014_BoxingRuntime_BoxingFunction_CarrierCapacity<br>Parameters: {user=System, name=BoxMaterial, password=System, Runmode=Y, value=2000, prefix=CC, data3=10, Browser=Chrome}</td>
+<td></td>
+<td>33</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.ID1660_TC014_BoxingRuntime_BoxingFunction_CarrierCapacity@704921a5</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.ID1661_TC015_BoxingRuntime_BoxingFunction_AddingMaterial.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.ID1661_TC015_BoxingRuntime_BoxingFunction_AddingMaterial<br>Parameters: {name=BoxMaterial, prefix2=SN, prefix1=CC, Runmode=Y, user=System, data=1, value=2000, password=System, Browser=Chrome}</td>
+<td></td>
+<td>35</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.ID1661_TC015_BoxingRuntime_BoxingFunction_AddingMaterial@df27fae</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.ID1662_TC017_BoxingRuntime_Complete.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.ID1662_TC017_BoxingRuntime_Complete<br>Parameters: {name=BoxMaterial, data4=0, prefix1=CC, data2=3, Runmode=Y, data1=1, user=System, value=2000, password=System, Browser=Chrome}</td>
+<td></td>
+<td>35</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.ID1662_TC017_BoxingRuntime_Complete@24a35978</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition6.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition6<br>Parameters: {name=BoxQuantity2, Runmode=Y, user=System, num=2.0, num2=1.0, nametype2=material, num1=2.0, nametype1=smt feeder, value=1000, password=System, Browser=Chrome}</td>
+<td></td>
+<td>35</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition6@16f7c8c1</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition6.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition6<br>Parameters: {name=BoxFeederCart, Runmode=Y, user=System, num=2.0, num2=0.0, nametype2=material, num1=1.0, nametype1=smt feeder, value=1000, password=System, Browser=Chrome}</td>
+<td></td>
+<td>35</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.Precondition6@16f7c8c1</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.ID1663_TC018_BoxingRuntime_AddingExcessCarrier.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.ID1663_TC018_BoxingRuntime_AddingExcessCarrier<br>Parameters: {name=BoxQuantity2, data2=1, Runmode=Y, data1=3, user=System, prefix=CC, value=2000, password=System, Browser=Chrome}</td>
+<td></td>
+<td>39</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.ID1663_TC018_BoxingRuntime_AddingExcessCarrier@2f0a87b3</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.ID1664_TC019_BoxingRuntime_AddingExcessMaterial.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.ID1664_TC019_BoxingRuntime_AddingExcessMaterial<br>Parameters: {data1=3, user=System, name=BoxQuantity2, password=System, Runmode=Y, value=2000, prefix=CC, Browser=Chrome}</td>
+<td></td>
+<td>48</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.ID1664_TC019_BoxingRuntime_AddingExcessMaterial@319b92f3</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.ID1665_TC020_BoxingRuntime_IntroducingInvalidCarrier.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.ID1665_TC020_BoxingRuntime_IntroducingInvalidCarrier<br>Parameters: {user=System, name=BoxFeederCart, password=System, Runmode=Y, data=1, value=2000, prefix=CC, Browser=Chrome}</td>
+<td></td>
+<td>25</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.ID1665_TC020_BoxingRuntime_IntroducingInvalidCarrier@fcd6521</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.ID1667_TC022_BoxingRuntime_CarrierContent_Carrier.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.ID1667_TC022_BoxingRuntime_CarrierContent_Carrier<br>Parameters: {user=System, name=BoxMaterial, password=System, Runmode=Y, data=3, value=2000, prefix=CC, Browser=Chrome}</td>
+<td></td>
+<td>35</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.ID1667_TC022_BoxingRuntime_CarrierContent_Carrier@5c18298f</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.ID1668_TC023_BoxingRuntime_CarrierContentAsCarrierMismatch.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.ID1668_TC023_BoxingRuntime_CarrierContentAsCarrierMismatch<br>Parameters: {user=System, name=BoxMaterial, password=System, Runmode=Y, value=2000, prefix=SN, Browser=Chrome}</td>
+<td></td>
+<td>28</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.ID1668_TC023_BoxingRuntime_CarrierContentAsCarrierMismatch@31f924f5</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.ID1669_TC024_BoxingRuntime_CarrierContent_Material.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.ID1669_TC024_BoxingRuntime_CarrierContent_Material<br>Parameters: {name=BoxMaterial, prefix2=SN, prefix1=CC, Runmode=Y, user=System, data=2, value=2000, password=System, Browser=Chrome}</td>
+<td></td>
+<td>35</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.ID1669_TC024_BoxingRuntime_CarrierContent_Material@5579bb86</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.ID1671_TC026_BoxingRuntime_CarrierContent_Both.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.ID1671_TC026_BoxingRuntime_CarrierContent_Both<br>Parameters: {name=BoxMaterial, prefix2=SN, prefix1=CC, data2=3, Runmode=Y, data1=2, user=System, value=2000, password=System, Browser=Chrome}</td>
+<td></td>
+<td>37</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.ID1671_TC026_BoxingRuntime_CarrierContent_Both@5204062d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.ID1687_TC015_BoxingRuntime_CarrierDashboard_ParentMapping.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.ID1687_TC015_BoxingRuntime_CarrierDashboard_ParentMapping<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to No
+	at com.PanaMCAutomation.MC_Boxing_Runtime2.ID1687_TC015_BoxingRuntime_CarrierDashboard_ParentMapping.testB(ID1687_TC015_BoxingRuntime_CarrierDashboard_ParentMapping.java:21)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace777588278", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace777588278'><pre>org.testng.SkipException: Runmode is set to No
+	at com.PanaMCAutomation.MC_Boxing_Runtime2.ID1687_TC015_BoxingRuntime_CarrierDashboard_ParentMapping.testB(ID1687_TC015_BoxingRuntime_CarrierDashboard_ParentMapping.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.ID1687_TC015_BoxingRuntime_CarrierDashboard_ParentMapping@4fcd19b3</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Boxing_Runtime2.ID1689_TC017_BoxingRuntime_AddingMoreThanCapacity.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Boxing_Runtime2.ID1689_TC017_BoxingRuntime_AddingMoreThanCapacity<br>Parameters: {user=System, password=System, Runmode=Y, Browser=Chrome}</td>
+<td><div><pre>org.testng.SkipException: Runmode is set to No
+	at com.PanaMCAutomation.MC_Boxing_Runtime2.ID1689_TC017_BoxingRuntime_AddingMoreThanCapacity.testB(ID1689_TC017_BoxingRuntime_AddingMoreThanCapacity.java:21)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace14818675", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace14818675'><pre>org.testng.SkipException: Runmode is set to No
+	at com.PanaMCAutomation.MC_Boxing_Runtime2.ID1689_TC017_BoxingRuntime_AddingMoreThanCapacity.testB(ID1689_TC017_BoxingRuntime_AddingMoreThanCapacity.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.PanaAutomation.Base.runMC.main(runMC.java:28)
+</pre></div></td>
+<td>0</td>
+<td>com.PanaMCAutomation.MC_Boxing_Runtime2.ID1689_TC017_BoxingRuntime_AddingMoreThanCapacity@376b4233</td></tr>
+</table><p>
+</body>
+</html>

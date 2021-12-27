@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MC MCConfig Test" parallel="none">
+  <test name="MCConfig Test">
+		<classes >
+            <class name="com.PanaMCAutomation.MC_MCConfig.AAPreCondition_ChangeSystemErrorMessageTypeToSlide" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeAllfields001" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeAssign002" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeAssignMandtory003" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeCopy004" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeWhereUsed005" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeDelete006" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.PMReasonGroupCodeCancel007" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.BarcodeCreation008" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.BarcodeWeightValidation" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.PMAttributeCreation" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.PMAttributeCreationMandatoryCheck" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.PMAttributeCopy" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.AttributeDelete" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.AttributeWhereUsed" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.AttributeCancel" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.InventoryAttribute" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.SeedConfigurationStandardType" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.Seed_Configuration_Suffix" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.Seed_Configuration_Sample" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.SeedConfigurationCounter" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.SeedConfigurationMaxCounterNo" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.SeedConfigurationDescription" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.SeedConfigurationCustomType" />
+            <class name="com.PanaMCAutomation.MC_MCConfig.SeedConfigurationName" />
+         </classes>
+  </test>
+</suite> <!-- Suite -->

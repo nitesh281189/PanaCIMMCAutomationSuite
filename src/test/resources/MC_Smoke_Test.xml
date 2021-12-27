@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MC Smoke Test" parallel="none">
+  <test name="Smoke Test">  
+  		
+		 <classes >		   	
+		 
+            <class name="com.PanaMCAutomation.MC_BVT.MC_ALogin" />
+            <class name="com.PanaMCAutomation.MC_BVT.MC_LoginFail" />
+            <class name="com.PanaMCAutomation.MC_BVT.MC_logout" />
+            
+            <class name="com.PanaMCAutomation.MC_BVT.MC_NewPart" />
+            <class name="com.PanaMCAutomation.MC_BVT.MC_NewTemplatePart" />
+            <class name="com.PanaMCAutomation.MC_BVT.MC_PartTemplate" />
+            <class name="com.PanaMCAutomation.MC_BVT.MC_NewPartWithTemplate" />           
+            <class name="com.PanaMCAutomation.MC_BVT.MC_PartMaster" />            
+            <class name="com.PanaMCAutomation.MC_BVT.MC_TSMNewType" />            
+            <class name="com.PanaMCAutomation.MC_BVT.MC_LocationNew" />           
+          
+			<class name="com.PanaMCAutomation.MC_BVT.MC_HoldMaterial" />
+            <class name="com.PanaMCAutomation.MC_BVT.MC_UnHoldMaterial" />
+            <class name="com.PanaMCAutomation.MC_BVT.MC_ScrapMaterial" />
+            <class name="com.PanaMCAutomation.MC_BVT.MC_UnScrapMaterial" />                      
+            <class name="com.PanaMCAutomation.MC_BVT.MC_AutoZero" />           
+            <class name="com.PanaMCAutomation.MC_BVT.MC_SpliceMaterial" />
+            <class name="com.PanaMCAutomation.MC_BVT.MC_AdjustQty" />    
+            <class name="com.PanaMCAutomation.MC_BVT.MC_VerifyRcCancelButon" />
+            <class name="com.PanaMCAutomation.MC_BVT.MC_ReceiveMaterialPrint" />
+            <class name="com.PanaMCAutomation.MC_BVT.MC_Split" />
+            <class name="com.PanaMCAutomation.MC_BVT.MC_VerifyReceiveMaterial" />          
+           </classes>
+  </test>
+</suite> <!-- Suite -->

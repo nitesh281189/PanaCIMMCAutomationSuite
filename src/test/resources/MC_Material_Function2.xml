@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="Test">
+  
+		 <classes >
+  
+<class name="com.PanaMCAutomation.MC_Material_Function2.MCID1116_MaterialFunction_AutoZeroScanMaterialID" />  
+<class name="com.PanaMCAutomation.MC_Material_Function2.MCID1446_MaterialFunction_AdjustUsePart" /> 
+<class name="com.PanaMCAutomation.MC_Material_Function2.Precondition1" /> 
+<class name="com.PanaMCAutomation.MC_Material_Function2.MCID1457_MaterialFunction_SpliceCheckMVPopup" />  
+<class name="com.PanaMCAutomation.MC_Material_Function2.MCID1462_MaterialFunction_UnSpliceCheckMVPopup" />  
+<class name="com.PanaMCAutomation.MC_Material_Function2.MCID1468_MaterialFunction_SpliceScarpHoldMaterial" />  
+
+
+             
+        </classes>
+    
+    
+    
+  </test>
+</suite> <!-- Suite -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MC TSM Type (0)]">
+  <test thread-count="5" name="TSM Type Test(failed)">
+    <classes>
+      <class name="com.PanaMCAutomation.MC_TSM_Type.MCID6_TSMType_Delete">
+        <methods>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_TSM_Type.MCID6_TSMType_Delete -->
+    </classes>
+  </test> <!-- TSM Type Test(failed) -->
+</suite> <!-- Failed suite [MC TSM Type (0)] -->

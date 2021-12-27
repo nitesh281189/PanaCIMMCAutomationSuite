@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MC System Config]">
+  <test thread-count="5" name="System Config Test(failed)">
+    <classes>
+      <class name="com.PanaMCAutomation.MC_System_Config.MCID1740_SystemConfig_ApplicationSettings_DefaultScrapLocation">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_System_Config.MCID1740_SystemConfig_ApplicationSettings_DefaultScrapLocation -->
+      <class name="com.PanaMCAutomation.MC_System_Config.MCID1758_UserConfig_AssignGroup_LoginIDSearch">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_System_Config.MCID1758_UserConfig_AssignGroup_LoginIDSearch -->
+      <class name="com.PanaMCAutomation.MC_System_Config.MCID1510_SystemConfig_ImportData_ImportPartViaExcel1">
+        <methods>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_System_Config.MCID1510_SystemConfig_ImportData_ImportPartViaExcel1 -->
+      <class name="com.PanaMCAutomation.MC_System_Config.MCID1743_SystemConfig_ApplicationSettings_MinimumPasswordLength">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_System_Config.MCID1743_SystemConfig_ApplicationSettings_MinimumPasswordLength -->
+      <class name="com.PanaMCAutomation.MC_System_Config.MCID1513_SystemConfig_ImportData_ImportPartViaExcel4">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_System_Config.MCID1513_SystemConfig_ImportData_ImportPartViaExcel4 -->
+      <class name="com.PanaMCAutomation.MC_System_Config.MCID1514_SystemConfig_ImportData_ImportPartViaExcel5">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_System_Config.MCID1514_SystemConfig_ImportData_ImportPartViaExcel5 -->
+      <class name="com.PanaMCAutomation.MC_System_Config.MCID1749_UserConfig_UserProfile_Save">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_System_Config.MCID1749_UserConfig_UserProfile_Save -->
+      <class name="com.PanaMCAutomation.MC_System_Config.MCID1190_SystemConfig_ImportData_PartImportInvalidFile">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="testB" invocation-numbers="0 1"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_System_Config.MCID1190_SystemConfig_ImportData_PartImportInvalidFile -->
+      <class name="com.PanaMCAutomation.MC_System_Config.MCID1766_UserConfig_UserGroup_Cancel">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_System_Config.MCID1766_UserConfig_UserGroup_Cancel -->
+    </classes>
+  </test> <!-- System Config Test(failed) -->
+</suite> <!-- Failed suite [MC System Config] -->

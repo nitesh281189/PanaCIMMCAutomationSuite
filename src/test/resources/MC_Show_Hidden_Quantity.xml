@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MC Show Hidden Quantity" parallel="none">
+  <test name="Show Hidden Quantity Test">
+  		
+		 <classes >
+            <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1111_ShowHiddenQuantity_TotalQTYField" />
+            <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1112_ShowHiddenQuantity_TotalQTYValue" />
+            <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1113_ShowHiddenQuantity_TotalQTYValueFilter" />
+            <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1114_ShowHiddenQuantity_TotalQTYValueHidden" />
+            <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1118_ShowHiddenQuantity_TotalGroupQTYField" />
+            <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1119_ShowHiddenQuantity_TotalGroupQTYPresent" />
+            <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1120_ShowHiddenQuantity_TotalGroupQTYValue" />
+            <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1121_ShowHiddenQuantity_TotalGroupQTYValueHidden" />
+            <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1122_ShowHiddenQuantity_TotalQTYPresent" />
+            <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1123_ShowHiddenQuantity_TotalQTYPresentToggle" />
+            <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1124_ShowHiddenQuantity_TotalQTYFilter" />
+            <class name="com.PanaMCAutomation.MC_Show_Hidden_Quantity.MCID1125_ShowHiddenQuantity_TotalQTYFilterHidden" />
+         </classes>
+  </test>
+</suite> <!-- Suite -->

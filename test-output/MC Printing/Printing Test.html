@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>TestNG:  Printing Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Printing Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Nov 29 15:32:15 ICT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>335 seconds (335004 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Printing_Helping.MCID1_Printing_Boxing.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Printing_Helping.MCID1_Printing_Boxing<br>Parameters: {user=System, password=System, Runmode=Y, value=2000, data=SMT Feeder Cart, Browser=Chrome}</td>
+<td></td>
+<td>26</td>
+<td>com.PanaMCAutomation.MC_Printing_Helping.MCID1_Printing_Boxing@4516af24</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Printing_Helping.MCID2_Printing_Carrier.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Printing_Helping.MCID2_Printing_Carrier<br>Parameters: {user=System, password=System, Runmode=Y, value=2000, Browser=Chrome}</td>
+<td></td>
+<td>23</td>
+<td>com.PanaMCAutomation.MC_Printing_Helping.MCID2_Printing_Carrier@4ae82894</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Printing_Helping.MCID3_Printing_Carrier_Cart1.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Printing_Helping.MCID3_Printing_Carrier_Cart1<br>Parameters: {user=System, password=System, Runmode=Y, value=2000, Browser=Chrome}</td>
+<td></td>
+<td>23</td>
+<td>com.PanaMCAutomation.MC_Printing_Helping.MCID3_Printing_Carrier_Cart1@543788f3</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Printing_Helping.MCID4_Printing_Carrier_Cart2.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Printing_Helping.MCID4_Printing_Carrier_Cart2<br>Parameters: {user=System, password=System, Runmode=Y, value=2000, Browser=Chrome}</td>
+<td></td>
+<td>25</td>
+<td>com.PanaMCAutomation.MC_Printing_Helping.MCID4_Printing_Carrier_Cart2@6d3af739</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Printing_Helping.MCID5_Printing_MCDashBoard.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Printing_Helping.MCID5_Printing_MCDashBoard<br>Parameters: {user=System, password=System, Runmode=Y, value=2000, Browser=Chrome}</td>
+<td></td>
+<td>22</td>
+<td>com.PanaMCAutomation.MC_Printing_Helping.MCID5_Printing_MCDashBoard@1da51a35</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Printing_Helping.MCID6_Printing_MCDashBoard_Cart1.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Printing_Helping.MCID6_Printing_MCDashBoard_Cart1<br>Parameters: {user=System, password=System, Runmode=Y, value=2000, Browser=Chrome}</td>
+<td></td>
+<td>22</td>
+<td>com.PanaMCAutomation.MC_Printing_Helping.MCID6_Printing_MCDashBoard_Cart1@16022d9d</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Printing_Helping.MCID7_Printing_MCDashBoard_Cart2.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Printing_Helping.MCID7_Printing_MCDashBoard_Cart2<br>Parameters: {user=System, password=System, Runmode=Y, value=2000, Browser=Chrome}</td>
+<td></td>
+<td>22</td>
+<td>com.PanaMCAutomation.MC_Printing_Helping.MCID7_Printing_MCDashBoard_Cart2@7e9a5fbe</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Printing_Helping.MCID8_Printing_MCDashBoard_ReceiveMaterial.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Printing_Helping.MCID8_Printing_MCDashBoard_ReceiveMaterial<br>Parameters: {name=Part10, mQuantity=100.0, Runmode=Y, mID=Part10, user=System, value=2000, description=Part10, password=System, Browser=Chrome}</td>
+<td></td>
+<td>40</td>
+<td>com.PanaMCAutomation.MC_Printing_Helping.MCID8_Printing_MCDashBoard_ReceiveMaterial@44a3ec6b</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Printing_Helping.MCID9_Printing_MCDashBoard_QueueDelete.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Printing_Helping.MCID9_Printing_MCDashBoard_QueueDelete<br>Parameters: {user=System, password=System, Runmode=Y, value=2000, Browser=Chrome}</td>
+<td></td>
+<td>22</td>
+<td>com.PanaMCAutomation.MC_Printing_Helping.MCID9_Printing_MCDashBoard_QueueDelete@71623278</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Printing_Helping.MCID10_Printing_MCDashBoard_QueueRetry.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Printing_Helping.MCID10_Printing_MCDashBoard_QueueRetry<br>Parameters: {user=System, password=System, Runmode=Y, value=2000, Browser=Chrome}</td>
+<td></td>
+<td>20</td>
+<td>com.PanaMCAutomation.MC_Printing_Helping.MCID10_Printing_MCDashBoard_QueueRetry@768b970c</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Printing_Helping.MCID11_Printing_MCDashBoard_QueuePauseAll.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Printing_Helping.MCID11_Printing_MCDashBoard_QueuePauseAll<br>Parameters: {user=System, password=System, Runmode=Y, value=2000, Browser=Chrome}</td>
+<td></td>
+<td>20</td>
+<td>com.PanaMCAutomation.MC_Printing_Helping.MCID11_Printing_MCDashBoard_QueuePauseAll@5a4041cc</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Printing_Helping.MCID12_Printing_MCDashBoard_QueueResumeAll.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Printing_Helping.MCID12_Printing_MCDashBoard_QueueResumeAll<br>Parameters: {user=System, password=System, Runmode=Y, value=2000, Browser=Chrome}</td>
+<td></td>
+<td>21</td>
+<td>com.PanaMCAutomation.MC_Printing_Helping.MCID12_Printing_MCDashBoard_QueueResumeAll@15b3e5b</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Printing_Helping.MCID13_Printing_MCDashBoard_QueueRefresh.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Printing_Helping.MCID13_Printing_MCDashBoard_QueueRefresh<br>Parameters: {user=System, password=System, Runmode=Y, value=2000, Browser=Chrome}</td>
+<td></td>
+<td>20</td>
+<td>com.PanaMCAutomation.MC_Printing_Helping.MCID13_Printing_MCDashBoard_QueueRefresh@61ca2dfa</td></tr>
+<tr>
+<td title='com.PanaMCAutomation.MC_Printing_Helping.MCID14_Printing_MCDashBoard_QueueClearCompleted.testB()'><b>testB</b><br>Test class: com.PanaMCAutomation.MC_Printing_Helping.MCID14_Printing_MCDashBoard_QueueClearCompleted<br>Parameters: {user=System, password=System, Runmode=Y, value=2000, data=Completed, Browser=Chrome}</td>
+<td></td>
+<td>20</td>
+<td>com.PanaMCAutomation.MC_Printing_Helping.MCID14_Printing_MCDashBoard_QueueClearCompleted@4b53f538</td></tr>
+</table><p>
+</body>
+</html>

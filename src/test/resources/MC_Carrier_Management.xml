@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MC Location" parallel="none">
+  <test name="MC Location Test">   		
+		 <classes >
+
+     
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID0000_1256__TC015_Carrier_Dashboard_Register_New_Generate_Carrier" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1242_TC001_Carrier_Dashboard_generated_carrier_details" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1243_TC002_Carrier_Dashboard_Column_Selection_check" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1244_TC003_Carrier_Dashboard_Column_Selection_uncheck" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1245_TC004_Carrier_Dashboard_gridascending_order" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1246_TC005_Carrier_Dashboard_griddescending_order" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1247_TC006_Carrier_Dashboard_column_search" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1248_TC007_Carrier_Dashboard_invalid_column_search" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1249_TC008_Carrier_Dashboard_drag_and_drop_columns" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1250_TC009_Carrier_Dashboard_Rows_dropdown" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1251_1250__TC010_Carrier_Dashboard_row_count" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1252_TC011_Carrier_Dashboard_page_navigation" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1254_TC013_Carrier_Dashboard_column_names" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1255_TC014_Carrier_Dashboard_Register_New_Generate_IDs" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1256_TC015_Carrier_Dashboard_Register_New_Generate_Carrier" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1257_TC016_Carrier_Dashboard_Register_New_No_of_required_IDs" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1258_TC017_Carrier_Dashboard_Register_New_No_of_required_IDs__0" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1259_TC018_Carrier_Dashboard_Register_New_No_of_required_IDs__1234567890" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1260_TC019_Carrier_Dashboard_Register_New_Print_buttonicon" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1262_TC021_Carrier_Dashboard_Register_New_Print_Queue_components" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1263_TC022_Carrier_Dashboard_Register_New_Print_Queue_grid" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1264_TC023_Carrier_Dashboard_Register_New_Print_Queue_Select_Printer" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1265_TC024_Carrier_Dashboard_Register_New_Print_Queue_Refresh_button" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1266_TC025_Carrier_Dashboard_Register_New_Print_Queue_Clear_Completed_button" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1267_TC026_Carrier_Dashboard_Register_New_Print_Queue_selectdeselect_grid_rows" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1268_TC027_Carrier_Dashboard_Register_New_Print_Queue_grid_values" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1269_TC028_Carrier_Dashboard_Register_New_Print_Queue_Pause_Print" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1270_TC029_Carrier_Dashboard_Register_New_Print_Queue_Delete_Print" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1271_TC030_Carrier_Dashboard_Register_New_Print_Queue_RetryReprint_Print" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1272_TC031_Carrier_Dashboard_Register_New_Print_Queue_Completed_status" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1273_TC032_Carrier_Dashboard_Carrier_Actions_Delete_button" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1274_TC033_Carrier_Dashboard_Carrier_Actions_Delete_button_default_state" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1275_TC034_Carrier_Dashboard_Carrier_Actions_Delete_button_enable" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1276_1273__TC035_Carrier_Dashboard_Carrier_Actions_Delete_operation" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1277_TC036_Carrier_Dashboard_Carrier_Actions_Delete_operation_when_content_is_NOT_NULL" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1278_TC037_Carrier_Dashboard_Carrier_Actions_Clear__button" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1279_TC037_Carrier_Dashboard_Carrier_Actions_Clear_button_default_state" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1280_TC038_Carrier_Dashboard_Carrier_Actions_Clear_button_enable" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1281_TC039_Carrier_Dashboard_Carrier_Actions_Clear_operation" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1282_TC040_Carrier_Dashboard_Carrier_Actions_Clear_ConsumableShipped" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1283_1281__TC041_Carrier_Dashboard_Carrier_Actions_Clear_DurablenotShipped" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1284_TC042_Carrier_Dashboard_Carrier_Actions_Shipped_button" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1285_TC043_Carrier_Dashboard_Carrier_Actions_Shipped_button_default_state" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1286_TC043_Carrier_Dashboard_Carrier_Actions_Shipped_button_enable" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1287_TC044_Carrier_Dashboard_Carrier_Actions_Shipped_operation" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1289_TC046_Carrier_Dashboard_Carrier_Actions_Shipped_update_operation" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1290_TC047_Carrier_Dashboard_Carrier_Actions_Shipped_move_out_items" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1294_TC051_Carrier_Dashboard_Carrier_Actions_View_Contents_button" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1295_TC052_Carrier_Dashboard_Carrier_Actions_View_Contents_button_default_state" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1296_TC053_Carrier_Dashboard_Carrier_Actions_View_Contents_button_enable" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1297_TC054_Carrier_Dashboard_Carrier_Actions_View_Contents_operation" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1298_TC055_Carrier_Cart_icon_disable" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1299_TC056_Carrier_Cart_icon_disable_when_no_Carrier_selected" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1300_TC057_Carrier_Cart_icon_enable" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1301_TC058_Carrier_Cart_select_all" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1302_TC059_Carrier_Cart_dashboard" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1303_TC061_Carrier_Cart_Dashboard_components" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1304_TC062_Carrier_Cart_Dashboard_column_names" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1305_TC063_Carrier_Cart_Dashboard_gridascending_order" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1306_TC064_Carrier_Cart_Dashboard_griddescending_order" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1307_TC065_Carrier_Cart_Dashboard_column_search" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1308_TC066_Carrier_Cart_Dashboard_invalid_column_search" />
+<class name="com.PanaMCAutomation.MC_Carrier_Management.ID1309_Skip__TC067_Carrier_Cart_Dashboard_drag_and_drop_columns" />
+</classes>
+  </test>
+</suite> <!-- Suite -->

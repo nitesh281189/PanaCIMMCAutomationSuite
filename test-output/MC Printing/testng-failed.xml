@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MC Printing]">
+  <test thread-count="5" name="Printing Test(failed)">
+    <classes>
+      <class name="com.PanaMCAutomation.MC_Printing_Helping.MCID7_Printing_MCDashBoard_Cart2">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Printing_Helping.MCID7_Printing_MCDashBoard_Cart2 -->
+    </classes>
+  </test> <!-- Printing Test(failed) -->
+</suite> <!-- Failed suite [MC Printing] -->

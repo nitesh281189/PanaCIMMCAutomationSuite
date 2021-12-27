@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MC MCConfig Test" parallel="none">
+  <test name="MCConfig Test">  
+  		<packages>
+    <package name="MCConfig.*"> 
+    
+	    <include name="MCConfig"/>
+
+
+	</package>
+    </packages>
+
+  </test>
+</suite> <!-- Suite -->

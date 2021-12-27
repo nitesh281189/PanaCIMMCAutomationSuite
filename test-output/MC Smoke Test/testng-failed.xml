@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MC Smoke Test]">
+  <test thread-count="5" name="Smoke Test(failed)">
+    <classes>
+      <class name="com.PanaMCAutomation.MC_BVT.MC_TSMNewType">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_TSMNewType -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_NewPartWithTemplate">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_NewPartWithTemplate -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_PartMaster">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_PartMaster -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_ReceiveMaterialPrint">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_ReceiveMaterialPrint -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_UnHoldMaterial">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_UnHoldMaterial -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_AdjustQty">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_AdjustQty -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_Split">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_Split -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_UnScrapMaterial">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_UnScrapMaterial -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_LoginFail">
+        <methods>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_LoginFail -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_NewTemplatePart">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_NewTemplatePart -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_ScrapMaterial">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_ScrapMaterial -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_SpliceMaterial">
+        <methods>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_SpliceMaterial -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_logout">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_logout -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_NewPart">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_NewPart -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_PartTemplate">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_PartTemplate -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_HoldMaterial">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_HoldMaterial -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_VerifyRcCancelButon">
+        <methods>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_VerifyRcCancelButon -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_VerifyReceiveMaterial">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_VerifyReceiveMaterial -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_AutoZero">
+        <methods>
+          <include name="quit"/>
+          <include name="testB" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_AutoZero -->
+      <class name="com.PanaMCAutomation.MC_BVT.MC_LocationNew">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="testB" invocation-numbers="0 1 2"/>
+          <include name="intit"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_BVT.MC_LocationNew -->
+    </classes>
+  </test> <!-- Smoke Test(failed) -->
+</suite> <!-- Failed suite [MC Smoke Test] -->

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MC InventoryDashboard Test" parallel="none">
+  <test name="InventoryDashboard Test">  
+  		<packages>
+    <package name="InventoryDashboard.*"> 
+    
+	    <include name="InventoryDashboard"/>
+
+	</package>
+    </packages>
+
+  </test>
+</suite> <!-- Suite -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MC TSM Type" parallel="none">
+  <test name="TSM Type Test">  
+  		
+		 <classes >
+            <class name="com.PanaMCAutomation.MC_TSM_Type.MCID1_TSMType_New" />
+            <class name="com.PanaMCAutomation.MC_TSM_Type.MCID2_TSMType_Cancel" />
+            <class name="com.PanaMCAutomation.MC_TSM_Type.MCID3_TSMType_MissingName" />
+            <class name="com.PanaMCAutomation.MC_TSM_Type.MCID4_TSMType_MissingDoc" />
+            <class name="com.PanaMCAutomation.MC_TSM_Type.MCID5_TSMType_MissingDes" />
+            <class name="com.PanaMCAutomation.MC_TSM_Type.MCID9_TSMType_Filter" />             
+            <class name="com.PanaMCAutomation.MC_TSM_Type.MCID7_TSMType_WhereUsed" />
+            <class name="com.PanaMCAutomation.MC_TSM_Type.MCID8_TSMType_Edit" />  
+            <class name="com.PanaMCAutomation.MC_TSM_Type.MCID6_TSMType_Delete" />                           
+           </classes>
+  </test>
+</suite> <!-- Suite -->

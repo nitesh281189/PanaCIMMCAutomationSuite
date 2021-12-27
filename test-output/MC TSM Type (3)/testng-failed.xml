@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MC TSM Type (3)]">
+  <test thread-count="5" name="TSM Type Test(failed)">
+    <classes>
+      <class name="com.PanaMCAutomation.MC_Bulk_update.ID1184_TC004_Bulk_Select_And_Update_Part_Delete">
+        <methods>
+          <include name="quit"/>
+          <include name="initTest"/>
+          <include name="intit"/>
+          <include name="testB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.PanaMCAutomation.MC_Bulk_update.ID1184_TC004_Bulk_Select_And_Update_Part_Delete -->
+    </classes>
+  </test> <!-- TSM Type Test(failed) -->
+</suite> <!-- Failed suite [MC TSM Type (3)] -->

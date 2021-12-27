@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MC Carrier Type" parallel="none">
+  <test name="MC Carrier Type Test">   		
+		 <classes >		
+		  	<class name="com.PanaMCAutomation.MC_Carrier_Type.Precondition1" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID1_CarrierType_NewInfo1" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID2_CarrierType_NewInfo2" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID3_CarrierType_NewInfo3" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID4_CarrierType_NewInfo4" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID5_CarrierType_NewInfo5" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID6_CarrierType_NewInfo6" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID7_CarrierType_NewRestrict1" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID8_CarrierType_NewRestrict2" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID9_CarrierType_NewRestrict3" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID10_CarrierType_NewRestrict4" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID11_CarrierType_NewRestrict5" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID12_CarrierType_NewRestrict6" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID13_CarrierType_NewRestrict7" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID14_CarrierType_SublocationNew" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID16_CarrierType_SublocationEditConfig" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID15_CarrierType_SublocationClear" />			
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID17_CarrierType_SublocationEditValue" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID18_CarrierType_SublocationMissingText" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID19_CarrierType_SublocationMissingDigit" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID20_CarrierType_SublocationMissingCount" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID21_CarrierType_SublocationMissingSeperator" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID22_CarrierType_NewAttributeAdd" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID23_CarrierType_NewAttributeDelete" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID24_CarrierType_NewAttributeEdit" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID25_CarrierType_Delete" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID26_CarrierType_Cancel" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID27_CarrierType_Edit" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID28_CarrierType_Filter" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID29_CarrierType_MissingBarcode" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID30_CarrierType_MissingSeed" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID31_CarrierType_MissingLabel" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID32_CarrierType_MissingLocation" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID33_CarrierType_MissingName" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID34_CarrierType_MissingCapacity" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID35_CarrierType_MissingDes" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID36_CarrierType_WhereUsed" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID37_CarrierType_AddLable" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID38_CarrierType_AddSeed" />
+			<class name="com.PanaMCAutomation.MC_Carrier_Type.MCID39_CarrierType_AddBarcode" />          	          
+      	</classes>
+  </test>
+</suite> <!-- Suite -->
